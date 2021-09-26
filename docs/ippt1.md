@@ -5,7 +5,28 @@
 
 
 {{ titre_chapitre(num,titre,theme)}}
- 
+
+## Remarque
+
+Cette initiation à Python utilise le module `turtle` avec le projet de la réalisation du jeu du pendu.
+Une autre découverte de Python plus "classique" est disponible sous forme de notebooks et pourra être utilisée pour compléter l'approche avec `turtle` et le jeu du pendu.
+
+??? note "Notebooks"
+    * **Notebook 1** : `print` pour afficher dans le terminale, notion de variable.
+    {{ telecharger("Jupyter Notebook","./notebook/1.Print-Variables.ipynb") }}
+    * **Notebook 2** : `input` pour demander une valeur, type des variables.
+    {{ telecharger("Jupyter Notebook","./notebook/2.Input-Types.ipynb") }}
+    * **Notebook 3** : A la découverte des instructions conditionnelles.
+    {{ telecharger("Jupyter Notebook","./notebook/3.InstructionsConditionnelles.ipynb") }}
+    * **Notebook 4** : Les boucles `for` et `while`.
+    {{ telecharger("Jupyter Notebook","./notebook/4.Boucles.ipynb") }}
+    * **Notebook 5** : Les fonctions et l'instruction `return`.
+    {{ telecharger("Jupyter Notebook","./notebook/5.Fonctions.ipynb") }}
+    * **Notebook 6** : A la découverte des listes (partie 1)
+    {{ telecharger("Jupyter Notebook","./notebook/6.Liste-1.ipynb") }}
+    * **Notebook 7** : A la découverte des listes (partie 2)
+    {{ telecharger("Jupyter Notebook","./notebook/6.Liste-2.ipynb") }}
+
 ## Activités 
 
 {{ titre_activite("Desssiner avec le module turtle",["notebook"],0) }}
@@ -181,6 +202,7 @@ crayon.end_fill()
 
 1. Ecrire et tester une fonction `rectangle_rempli(x,y,largeur,longueur,couleur)` qui trace un rectangle rempli avec la couleur `couleur`, de dimensions `largeur x longueur` et dont le coin inférieur gauche est situé au point de coordonnées `(x,y)`
 2. En utilisant la fonction ci-dessus, écrire un programme Python permettant de dessiner un drapeau français de dimension `300` sur `200` (chacun des trois rectangles formant le drapeau est de dimensions `100x200`)
+3. Même question avec le [drapeau de la Suède](https://en.wikipedia.org/wiki/Flag_of_Sweden){target=_blank}. 
 
 
 {{ exo("Panneau de signalisation",[]) }}

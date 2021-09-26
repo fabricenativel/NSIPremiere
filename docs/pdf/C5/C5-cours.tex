@@ -1,0 +1,143 @@
+\PassOptionsToPackage{dvipsnames,table}{xcolor}
+\documentclass[10pt]{beamer}
+\usepackage{Cours}
+
+\begin{document}
+
+\input{\detokenize{/home/fenarius/Travail/Cours/NSIPremiere/docs/commun/MacrosCours.tex}}
+\setcounter{numchap}{5}
+\newcommand{\Python}{\cnum Initiation à Python avec turtle}
+
+\pythonmode
+
+% Instructions conditionnelles
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{alertblock}{Instructions conditionnelles}
+		\begin{itemize}
+			\item<2-> La syntaxe d'une instruction conditionnelle en Python est :
+			      \begin{lstlisting}
+	if <condition>:
+		<instructions1>
+	else:
+		<instructions2>
+	\end{lstlisting}
+			      Cela permet d'exécuter les {\tt <instructions1>} si la {\tt condition} est vérifiée, sinon on exécute les {\tt <instructions2>}.
+			\item<3->  \textcolor{red}{\danger} On fera bien attention à la syntaxe du langage, et notamment à l'usage du caractère \textcolor{red}{\tt :} qui suit la condition (et le {\tt else}) et à l'\textcolor{red}{indentation}, c'est à dire le décalage des instructions qui doivent s'executer.
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+% Exemple instructions conditionnelles
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{exampleblock}{Exemples}
+		\begin{enumerate}
+			\item<1-> Ecrire l'instruction permettant de tester si la variable {\tt erreurs} vaut 0
+			\item<2-> On suppose qu'une variable {\tt longueur} peut être positive ou négative, si cette variable est positive alors on fait avancer la tortue de {\tt longueur}, sinon on la fait reculer de {\tt -longueur}.
+			      Ecrire les instructions python correspondantes.
+		\end{enumerate}
+	\end{exampleblock}
+\end{frame}
+
+% Exemple instructions conditionnelles
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{exampleblock}{Exemples}
+		\begin{enumerate}
+			\item Ecrire l'instruction permettant de tester si la variable {\tt erreurs} vaut 0
+			      \begin{lstlisting}
+    if erreur==0:
+		\end{lstlisting}
+			\item On suppose qu'une variable {\tt longueur} peut être positive ou négative, si cette variable est positive alors on fait avancer la tortue de {\tt longueur}, sinon on la fait reculer de {\tt -longueur}.
+			      Ecrire les instructions python correspondantes.
+			      \begin{lstlisting}
+		if longueur>0:
+			crayon.forward(longueur)
+		else:
+			crayon.backward(-longueur)
+	\end{lstlisting}
+		\end{enumerate}
+	\end{exampleblock}
+\end{frame}
+
+
+% boucle while
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{alertblock}{Boucles {\tt while}}
+		\begin{itemize}
+			\item<2-> La syntaxe d'une boucle \textcolor{red}{\tt while}  en Python est :
+			      \begin{lstlisting}
+	while <condition>:
+		<instruction>
+	\end{lstlisting}
+			      Cela permet d'exécuter les {\tt <instructions>} tant que la {\tt <condition>} est  vérifiée.
+			\item<3->  On ne sait pas a priori combien de fois cette boucle sera exécutée (et elle peut même être infinie), on dit que c'est une boucle \textcolor{blue}{non bornée}.
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+% boucle while
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{exampleblock}{Exemple d'une boucle {\tt while}}
+		On suppose déjà crée une fonction {\tt carre(c)} qui dessine un carré de côté {\tt c} à partir de la position courante de la tortue.
+		Ecrire un programme Python, permettant de tracer la figure suivante sachant que : 
+		\begin{itemize}
+		\item le carré initial à 200 pixels de côté
+		\item le côté des carrés intérieur diminue de dix pourcents à chaque étape
+		\item le plus petit carré a un côté mesurant plus de 5 pixels.
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.3]{ex_cours.eps}
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
+
+% boucle while
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{exampleblock}{Exemple d'une boucle {\tt while}}
+		\begin{lstlisting}
+ 	cote = 200
+	while cote>5:
+    	carre(cote)
+     	cote = cote * 0.9
+		\end{lstlisting}
+		\begin{center}
+			\includegraphics[scale=0.3]{ex_cours.eps}
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
+% boucle while
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{alertblock}{Fonction renvoyant un résultat}
+		En plus d'exécuter un bloc d'instructions, une fonction peut transmettre une valeur au reste du programme à l'aide d'une instruction \pmc{return}.
+		On utilise alors la syntaxe suivante : 
+		\begin{lstlisting}
+			def <nom_fonction>(<arguments>):
+				<instruction>
+				return <valeur>
+			\end{lstlisting}
+	\end{alertblock}
+\end{frame}
+
+% Exemple
+\begin{frame}[fragile]
+	\mframe{\Python}
+	\begin{exampleblock}{Exemple de fonction contenant un \pmc{return}}
+		La fonction ci-dessous, renvoie la moyenne des deux nombres donnés en argument
+		\begin{lstlisting}
+ 	def moyenne(x,y):
+		m = (x+y)/2
+		return m
+		\end{lstlisting}
+	\end{exampleblock}
+\end{frame}
+
+
+\end{document}

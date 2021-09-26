@@ -1,10 +1,8 @@
+#! /usr/bin/python3
 """
 pendu.py
-
 Le code complet du jeu du pendu, avec identification des parties
 réalisées dans chacune des activités.
-
-Auteur : Sébastien Hoarau
 Date   : 2021.09
 """
 
@@ -16,48 +14,17 @@ Date   : 2021.09
 
 import turtle
 
+# --- Les constantes
+MOT = "PYTHON"
+
 # --- Créer la feuille et le crayon
 
 feuille = turtle.Screen()
 crayon = turtle.Turtle()
 feuille.bgcolor('beige')
+crayon.speed(10)
+crayon.hideturtle()
 
-# --- Dessiner les deux premières barres de la potence
-
-# crayon.color('red')
-# crayon.pensize(5)
-
-# crayon.penup()
-# crayon.goto(-200,-150)
-# crayon.pendown()
-# crayon.goto(-100,-150)
-
-# crayon.penup()
-# crayon.goto(-150,-150)
-# crayon.pendown()
-# crayon.goto(-150,200)
-
-# --- Dessiner les deux dernières barres de la potence (Exercice 1)
-
-# crayon.goto(50,200)
-# crayon.penup()
-# crayon.goto(-150,150)
-# crayon.pendown()
-# crayon.goto(-100,200)
-
-# --- Dessiner la corde (Exercice 2)
-
-# crayon.color('black')
-# crayon.pensize(3)
-# crayon.penup()
-# crayon.goto(0,200)
-# crayon.pendown()
-# crayon.goto(0,150)
-
-# --- Dessiner la tête du pendu
-
-# crayon.setheading(180)
-# crayon.circle(25)
 
 
 # -----------------------------------------------
@@ -81,19 +48,18 @@ def pendu_1():
 # --- Exercice 1 (les instructions, pas la fonction pendu_2)
 
 def pendu_2():
-    """Les 2 dernières barres de la potence et la corde"""
+    """Les 2 dernières barres de la potence"""
     ligne(-150, 150, -100, 200)
     ligne(-150, 200, 50, 200)    
-    crayon.color('black')
-    crayon.pensize(3)
-    ligne(0, 200, 0, 150)
+    
 
 # --- Exercice 2 
 
 def pendu_3():
     """La corde et la tête"""
-    crayon.color('black')
     crayon.pensize(3)
+    crayon.color('black')
+    ligne(0, 200, 0, 150)
     crayon.setheading(180)
     crayon.circle(25)
 
@@ -113,8 +79,60 @@ def pendu_6():
     ligne(0, 0, -50, -75)
     ligne(0, 0, 50, -75)
 
+def carre(x,y):
+    crayon.penup()
+    crayon.goto(x,y)
+    crayon.pendown()
+    crayon.setheading(0)
+    crayon.forward(40)
+    crayon.left(90)
+    crayon.forward(40)
+    crayon.left(90)
+    crayon.forward(40)
+    crayon.left(90)
+    crayon.forward(40)
+    crayon.left(90)
 
 
+
+# -----------------------------------------------
+# Activité 3 -- Notebook découverte des boucles
+# -----------------------------------------------
+
+def carres(n):
+    x = -50*n//2
+    for i in range(n):
+        carre(x,-250)
+        x+=50
+
+
+def affiche_alphabet():
+    code_lettre = 65
+    abscisse_lettre = -300
+    for compteur in range(26):
+        crayon.penup()
+        crayon.goto(abscisse_lettre, -200)
+        crayon.pendown()
+        lettre = chr(code_lettre)
+        crayon.write(lettre,font=("Arial",16,"bold"),align="center")
+        code_lettre += 1
+        abscisse_lettre+=25
+
+def barre(lettre):
+    abscisse_lettre = -300+(ord(lettre)-65)*25
+    crayon.penup()
+    crayon.goto(abscisse_lettre-10,-195)
+    crayon.color("red")
+    crayon.pendown()
+    crayon.setheading(45)
+    crayon.pensize(3)
+    crayon.forward(22)
+    crayon.color("black")
+
+# Programme principal
+
+carres(6)
+affiche_alphabet()
 
 # --- A laisser à la fin
 

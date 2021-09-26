@@ -1,0 +1,9 @@
+\mframe{\Python}
+	\begin{exampleblock}{Exemple de fonction contenant un \pmc{return}}
+		La fonction ci-dessous, renvoie la moyenne des deux nombres donnés en argument
+		\begin{lstlisting}
+ 	def moyenne(x,y):
+		m = (x+y)/2
+		return m
+		\end{lstlisting}
+	\end{exampleblock}

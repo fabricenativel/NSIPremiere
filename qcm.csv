@@ -105,3 +105,49 @@ def mystere(l,a):
     crayon.setheading(a)
     crayon.forward(l)
 ```",Un trait de longueur 45 d'orientation 100° et partant de l'origine,Un trait de longueur 100 d'orientation 45° et partant de l'origine,Deux traits de longueur 100 se croisant à l'origine à 45°,Cette fonction ne produit aucun dessin !,D,Langages et programmation,3,
+56,Quelle instruction permet de créer une boucle qui va répéter 5 fois  les instructions indentées qui suivent ?,`for ma_variable in range(5)`,`for ma_variable in range(5):`,`for ma_variable in 5:`,`if ma_variable in 5:`,B,Langages et programmation,3,
+57,Quelle instruction permet de tester si la variable `essais` vaut 10 ?,`if essais=10`,`if essais==10`,`if essais==10:`,`if essais in 10:`,C,Langages et programmation,5,
+58,Une boucle `while` :,s'exécute tant qu'une condition est vraie et donc peut être infinie.,s'exécute un nombre prédéfinie de fois,s'exécute toujours une infinité de fois,s'exécute jusqu'à ce que l'utilisateur réponde correctement,A,Langages et programmation,5,
+59,"Quel sera le résultat de l'exécution du programme Python suivant ?
+
+```python
+n = 5
+p = 1
+while n>0:
+p = p*2
+```
+",Une boucle infinie,Une boucle se répétant cinq fois,Une `Syntax Error`,Une `Indentation Error`,D,Langages et programmation,5,
+60,"Quelles seront les valeurs des variables `s` et `i` à la fin de l'exécution du programme suivant ?
+
+```python
+s = 0
+i = 1
+while i < 5:
+    s = s + i
+    i = i + 1
+```
+",`s=10` et `i=4`,`s=10` et `i=5`,`s=15` et `i=5`,Aucunes car ce programme produit une erreur.,A,Langages et programmation,5,
+61,"Quelle instruction permet d'exécuter une boucle tant que les variables `a` et `b` sont toutes les deux inférieures strictement à 10.
+",`while a<10 or b<10`,`while a<10 or b<10:`,`while a<10 and b<10`,`while a<10 and b<10:`,D,Langages et programmation,5,
+62,"Quel est la valeur de la variable `b` après exécution de ce programme :
+
+```python
+a = 10
+if a%2==0:
+    b=1
+else:
+    b=2
+```",`b=1`,`b=2`,`b=10`,Aucune car ce programme produit une erreur,A,Langages et programmation,5,
+63,"Quel sera la valeur de la variable `compteur` après l'exécution du programme suivant ?
+
+```python
+compteur = 1
+compteur += 1
+```",Aucune car `+= 1` provoque une erreur,`compteur` vaudra 2 car `+= 1` permet d'augmenter de 1 une variable,`compteur` vaudra 0 car `+= 1` permet de diminuer de 1 une variable,`compteur` vaudra 1 car `+= 1` ne modifie pas sa valeur,B,Langages et programmation,5,
+64,"Quel sera la valeur de la variable `compteur` après l'exécution du programme suivant ?
+
+```python
+compteur = 1
+compteur += 1
+```",Aucune car `+= 1` provoque une erreur,`compteur` vaudra 2 car `+= 1` permet d'augmenter de 1 une variable,`compteur` vaudra 0 car `+= 1` permet de diminuer de 1 une variable,`compteur` vaudra 1 car `+= 1` ne modifie pas sa valeur,B,Langages et programmation,5,
+65,De quand date la première version du langage Python ?,1951,1971,1991,2011,C,Langages et programmation,3,
