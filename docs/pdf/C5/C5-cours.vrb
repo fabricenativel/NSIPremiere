@@ -1,9 +1,13 @@
 \mframe{\Python}
-	\begin{exampleblock}{Exemple de fonction contenant un \pmc{return}}
-		La fonction ci-dessous, renvoie la moyenne des deux nombres donnés en argument
-		\begin{lstlisting}
- 	def moyenne(x,y):
-		m = (x+y)/2
-		return m
-		\end{lstlisting}
+	\begin{exampleblock}{Exemple d'une boucle {\tt while}}
+		On suppose déjà crée une fonction {\tt carre(c)} qui dessine un carré de côté {\tt c} à partir de la position courante de la tortue.
+		Ecrire un programme Python, permettant de tracer la figure suivante sachant que :
+		\begin{itemize}
+		\item le carré initial à 200 pixels de côté
+		\item le côté des carrés intérieur diminue de dix pourcents à chaque étape
+		\item le plus petit carré a un côté mesurant plus de 5 pixels.
+		\end{itemize}
+		\begin{center}
+			\includegraphics[scale=0.3]{ex_cours.eps}
+		\end{center}
 	\end{exampleblock}
