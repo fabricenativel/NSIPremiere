@@ -4,8 +4,6 @@ pendu.py
 Le code complet du jeu du pendu, avec identification des parties
 réalisées dans chacune des activités.
 
-Auteur : Sébastien Hoarau
-Date   : 2021.09
 """
 
 # -------------------------------------------
@@ -115,7 +113,3 @@ def pendu_6():
 
 
 
-
-# --- A laisser à la fin
-
-feuille.mainloop()
