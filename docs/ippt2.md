@@ -10,13 +10,13 @@
 
 {{ titre_activite("Retour sur le jeu du pendu",["rappel"],0) }}
 
-### Rappels
+#### Rappels
 1. Télécharger ci-dessous le programme déjà entamé sur le jeu du pendu :
 {{ telecharger("Debut du jeu du pendu","./files/C5/debut-pendu.py")}}
 2. Ouvrir ce fichier dans VS Code, que nous utiliserons à présent comme éditeur
 3. Relire ce fichier
 
-### Interaction avec le joueur
+#### Interaction avec le joueur
 
 Pour demander une lettre  on utilise `feuille.textinput(titre, question)` qui crée une fenêtre dans laquelle l'utilisateur peut taper sa réponse. Les paramètres `titre` et `question` permettent de spécifier le titre de cette fenêtre et d'écrire le texte de la question.
 Par exemple :
@@ -40,7 +40,7 @@ def demander_lettre():
 
 Il nous reste à valider la saisie avant de renvoyer la lettre via l'utilisation d'une **instruction conditionnelle**.
 
-### Instruction conditionnelle
+#### Instruction conditionnelle
 
 L'instruction conditionnelle permet de traduire en python le traitement suivant :
 
@@ -87,7 +87,7 @@ Les fonctions `affiche_message` et `efface_message` vous sont données :
     2. Écrire une boucle `for` dans votre programme permettant d'appeler `get_lettre` à cinq reprises pour tester cette fonction.
 
 
-### Boucle non bornée
+#### Boucle non bornée
 
 La boucle `for`, déjà rencontrée permet de répéter des instructions un nombre **déterminé** de fois, on parle dans ce cas, de **boucles bornées**. La situation ici est différente, on ne connaît pas le nombre d'erreurs que va commettre le joueur avant de découvrir le mot. On utilise une **boucle non bornée** en spécifiant sa condition d'arrêt, en français cela donne : *tant que* le nombre d'erreurs possibles (limité à 6), n'est pas atteint répéter la demande d'une lettre. Ou encore en Python:
 
@@ -101,7 +101,7 @@ while nb_erreurs<7:
 
     Dans votre programme, remplacer la boucle `for` que vous aviez mise précédemment par les lignes ci-dessus et constater que la boucle est pour le moment infinie puisque la variable `nb_erreurs` reste à 0. 
 
-### Encore des instructions conditionnelles ...
+#### Encore des instructions conditionnelles ...
 
 Il faut donc mettre à jour l'affichage du jeu en fonction de la réponse du joueur :
 
@@ -137,7 +137,7 @@ while nb_erreurs < 7:
 
     Dans votre programme, remplacer la boucle précédente par celle-ci, et vérifier qu'à présent la boucle se termine après 7 erreurs.
 
-### Dessin du pendu correspondant au nombre d'erreurs
+#### Dessin du pendu correspondant au nombre d'erreurs
 
 Après la mise à jour de `nb_erreurs`, on voudrait modifier en conséquence le dessin du pendu. On doit donc écrire une fonction `tracer_pendu` qui prend en paramètre le nombre d'erreurs commises par le joueur et trace le dessin correspondant. 
 
@@ -159,16 +159,23 @@ Après la mise à jour de `nb_erreurs`, on voudrait modifier en conséquence le 
     Remarquer l'instruction `elif` contraction de `else if`.
 
 
-### Appel de cette fonction dans la boucle
+#### Appel de cette fonction dans la boucle
 
 !!! exercice "A faire vous-même"
 
     Compléter la boucle `while` en y incluant l'appel à cette fonction lorsque le nombre d'erreurs augmente.
 
-### Ce qu'il reste à faire
+#### Victoire du joueur
 
-Le jeu commence à prendre forme. Il nous manque encore la prise en compte de la victoire du joueur.
+Ajouter les instructions permettant  la prise en compte de la victoire du joueur et l'arrêt du jeu dans ce cas.
 
+{{ titre_activite("Les listes de Python",[]) }}
+
+{{ telecharger("Jupyter Notebook","./notebook/6.Liste-1.ipynb") }}
+
+{{ titre_activite("Parcours d'une liste",[]) }}
+
+{{ telecharger("Jupyter Notebook","./notebook/6.Liste-2.ipynb") }}
 
 ## Cours
 
@@ -189,3 +196,13 @@ Le jeu commence à prendre forme. Il nous manque encore la prise en compte de la
 La ligne centrale est tracé avec un crayon d'épaisseur 4 et en couleur *darkred*, toutes les autres lignes sont d'épaisseur 2 et en couleur *navy*.
 
 2. Modifier l'instruction conditionnelle contenue dans le boucle `for` de façon à ce que les lignes au dessus de la ligne centrale soient tracées en couleur *green*.
+
+{{ exo("Suite de carrés",[])}}
+
+Ecrire un programme python permettant de dessiner la figure ci-dessous :
+![Carrés](./images/C5/ex2.png){: .imgcentre}
+Votre programme devra contenir :
+
+* la définition d'une fonction `carre` et des appels à cette fonction,
+* une boucle,
+* une instruction conditionnelle.

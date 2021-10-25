@@ -74,7 +74,7 @@ On utilisera le simulateur en ligne [circuitverse](http://circuitverse.org){targ
     * 0100 + 0101 = 1001 (c'est à dire 4 + 5 = 9)
     * 0111 + 0011 = 1001 (c'est à dire 7 + 3 = 10) 
 
-    !!! Pour aller plus loin
+    !!! Lien "Pour aller plus loin"
         On peut inclure l'affichage digital des nombres en base 10 comme sur une calculatrice, chacun des nombres à additionner est sur 4 bits, pour les afficher utiliser un `HexDisplay` (menu Output). Attention cependant pour regrouper les 4 bits d'un nombre utiliser un `Splitter` dans le menu Misc, il permet de regrouper une entrée de 4 bits en une seule entrée comme demandé par l'afficher hexadécimal. Pour créer le Splitter, entrer 4 comme *bitWidth*, puis "1 1 1 1" comme *bitWidth Split*.
 
 
