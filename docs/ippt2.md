@@ -206,3 +206,78 @@ Votre programme devra contenir :
 * la définition d'une fonction `carre` et des appels à cette fonction,
 * une boucle,
 * une instruction conditionnelle.
+
+{{ exo("Génération de listes en Python",[])}}
+
+1. On considère le programme suivant :
+```python
+liste1 = [0]*100
+liste2 = [0 for k in range(100)]
+liste3 = []
+for k in range(100):
+    liste3.append(0)
+```
+
+    1. Quel est le contenu de chacune des listes ?
+    2. Indiquer par quel procédé chacune de ces listes a été crée.
+
+2. Ecrire un programme python permettant de créer les listes suivantes :
+    1. Une liste contenant 12 fois le chiffre 7.
+    2. La liste des nombres entiers de 1 à 100.
+    3. Une liste contenant 1000 nombres tirés au sort entre 1 et 6.
+
+        !!! Aide 
+            On rappelle que la fonction `randint` peut être importer depuis le module `random`, elle permet de tirer un nombre en deux valeurs `a` et `b` données en paramètres.
+
+    4. La liste des cubes des entiers de 1 à 10.
+
+
+{{ exo("Parcours de listes en Python",[])}}
+
+On suppose qu'on dispose d'une liste de notes, on veut écrire une fonction qui renvoie le nombres de notes qui sont en dessous de la moyenne. 
+
+1. On considère une première version de cette fonction :
+```python
+def inferieur_moyenne(liste_notes):
+	nb = 0
+	for note in liste_notes:
+	    if .....:
+	    	nb = .......
+	return ...
+```
+    1. Recopier et compléter cette fonction
+    2. Tester cette fonction 
+
+2. Voici une deuxième version de cette fonction :
+```python
+def inferieur_moyenne(liste_notes):
+	nb = 0
+	for indice in ........:
+	    if ........... : 
+	    	nb = .......
+	return ...
+```
+    1. Recopier et compléter cette fonction
+    2. Tester cette fonction
+
+3. Quelle est la différence principale entre ces deux versions de la même fonction ?
+4. Ecrire les fonctions suivantes :
+    
+    1. `max_liste` qui prend comme argument une liste non vide de nombres et renvoie le plus grand de ces nombres.
+    2. `somme_liste` qui prend comme argument une liste non vide de nombres et renvoie la somme de ces nombres.
+    3. `moyenne_liste` qui prend comme argument une liste non vide de nombres et renvoie la moyenne de ces nombres.
+
+
+{{ exo("Recherche d'occurences",[])}}
+
+1. Ecrire une fonction `present(elt,liste)` qui renvoie `True` si `elt` se trouve dans la liste `liste` et `False` sinon. Par exemple `present(3,[1,4,5]` renvoie `False`, par contre `present(4,[1,4,5]` renvoie `True`.
+2. Tester cette fonction
+3.  Ecrire une fonction `occurence(elt,liste)` qui renvoie le nombre de fois où `elt` apparaît dans `liste`.
+
+
+{{ exo("Chaines de caractères",[]) }}
+
+1. Ecrire une fonction `compte_caractere(s,c)` qui prendre en argument une chaîne de caractère `s` et un caractère `c` et retourne le nombre de fois où `c` apparait dans `s`. Par exemple `compte_caractere("informatique","i"")` renvoie 2 puisqu'il y a deux `i` dans le mot `informatique`
+2. Ecrire une fonction `inverse` qui prend en argument une chaîne de caractère et retourne cette chaîne écrite à l'envers. Par exemple, `inverse("Python")` donnera `"nohtyP"`.
+3. Ecrire une fonction `compare` qui prend en argument deux chaînes de caractères et renvoie le nombre de fois où ces deux chaines on la même lettre au même emplacement. Par exemple, `compare("Python","Poterie")` retourne 2 car le "P" et le "t" sont situés aux mêmes emplacements dans les deux mots.
+

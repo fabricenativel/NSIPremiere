@@ -144,20 +144,14 @@ else:
 compteur = 1
 compteur += 1
 ```",Aucune car `+= 1` provoque une erreur,`compteur` vaudra 2 car `+= 1` permet d'augmenter de 1 une variable,`compteur` vaudra 0 car `+= 1` permet de diminuer de 1 une variable,`compteur` vaudra 1 car `+= 1` ne modifie pas sa valeur,B,Langages et programmation,5,
-64,"Quel sera la valeur de la variable `compteur` après l'exécution du programme suivant ?
-
-```python
-compteur = 1
-compteur += 1
-```",Aucune car `+= 1` provoque une erreur,`compteur` vaudra 2 car `+= 1` permet d'augmenter de 1 une variable,`compteur` vaudra 0 car `+= 1` permet de diminuer de 1 une variable,`compteur` vaudra 1 car `+= 1` ne modifie pas sa valeur,B,Langages et programmation,5,
 65,De quand date la première version du langage Python ?,1951,1971,1991,2011,C,Langages et programmation,3,
-66,"Parmi les éléments suivants d'un ordinateur, lequel n'est pas un périphérique d'entrée ?",Souris,Ecran,Disque dur,Clé usb,B,Histoire de l'informatique,4,
-67,"Dans le modèle d'architecture de Von Neumann, quel est le rôle de l'unité de contrôle ?",Gérer le séquençage (l'ordre) des opérations,Effectuer les opérations,Lire les données,Stocker les données,A,Histoire de l'informatique,4,
-68,"Dans le modèle d'architecture de Von Neumann, que signifie UAL ?",Unité Active de Lecture,Unité Additive et Logique,Unité Arithmétique et Logique,Unité Active et logique,C,Histoire de l'informatique,4,
-69,Quel est le rôle de l'unité arithmétique et logique dans un ordinateur ?,Afficher les informations,Définir l'ordre des opérations,Effectuer les opérations,Stocker les informations,C,Histoire de l'informatique,4,
-70,"Le composant élémentaire d'un ordinateur, circuit électronique ne pouvant être que dans deux états (0 ou 1) s'appelle :",Un transistor,Une radio,Un processeur,Une porte logique,A,Histoire de l'informatique,4,
-71,Quel est l'opérateur booléen qui vaut 1 seulement lorsque les deux opérandes valent 1 ?,Or,And,Nor,Nand,B,Histoire de l'informatique,4,
-72,"Parmi les propositions suivantes, quelle expression est égale à `not(a and b)` ?",`(not a) and (not b)`,`(not a) or (not b)`,`(not a) and  b`,`a and (not b)`,B,Histoire de l'informatique,4,
+66,"Parmi les éléments suivants d'un ordinateur, lequel n'est pas un périphérique d'entrée ?",Souris,Ecran,Disque dur,Clé usb,B,Architectures matérielles et systèmes d'exploitation,4,
+67,"Dans le modèle d'architecture de Von Neumann, quel est le rôle de l'unité de contrôle ?",Gérer le séquençage (l'ordre) des opérations,Effectuer les opérations,Lire les données,Stocker les données,A,Architectures matérielles et systèmes d'exploitation,4,
+68,"Dans le modèle d'architecture de Von Neumann, que signifie UAL ?",Unité Active de Lecture,Unité Additive et Logique,Unité Arithmétique et Logique,Unité Active et logique,C,Architectures matérielles et systèmes d'exploitation,4,
+69,Quel est le rôle de l'unité arithmétique et logique dans un ordinateur ?,Afficher les informations,Définir l'ordre des opérations,Effectuer les opérations,Stocker les informations,C,Architectures matérielles et systèmes d'exploitation,4,
+70,"Le composant élémentaire d'un ordinateur, circuit électronique ne pouvant être que dans deux états (0 ou 1) s'appelle :",Un transistor,Une radio,Un processeur,Une porte logique,A,Architectures matérielles et systèmes d'exploitation,4,
+71,Quel est l'opérateur booléen qui vaut 1 seulement lorsque les deux opérandes valent 1 ?,Or,And,Nor,Nand,B,Architectures matérielles et systèmes d'exploitation,4,
+72,"Parmi les propositions suivantes, quelle expression est égale à `not(a and b)` ?",`(not a) and (not b)`,`(not a) or (not b)`,`(not a) and  b`,`a and (not b)`,B,Architectures matérielles et systèmes d'exploitation,4,
 73,"Quelles sont les valeurs manquantes dans la table de vérité suivante :
 
 | a | b| not a | b or (not a) | 
@@ -166,4 +160,6 @@ compteur += 1
 |0|1|1|1|
 |1|0|?|?|
 |1|1|0|1|
-",0 et 0,0 et 1,1 et 0,1 et 1,A,Histoire de l'informatique,4,
+",0 et 0,0 et 1,1 et 0,1 et 1,A,Architectures matérielles et systèmes d'exploitation,4,
+74,Que vaut la variable `a` après exécution de l'instruction `a=[0.5*x for x in range(4)]` ?,"[0.0,0.5,1.0,1.5,2.0]","[0,1,2,3,4]","[0,1,2,3]","[0.0,0.5,1.0,1.5]",D,Langages et programmation,5,
+75,"Si `alpha=[""A"",""B"",""C"",""D"",""E"",""F"",""G"",""H""]` quelle est l'expression permettant d'accéder à la lettre ""E"" ?",`alpha4`,`alpha[4]`,`alpha(4)`,`alpha.E`,B,Langages et programmation,5,
