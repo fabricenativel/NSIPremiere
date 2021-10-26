@@ -38,7 +38,7 @@ En utilisant la video ci-dessus et en faisant éventuellement vos propres recher
         |  ...  |   ... |  ...  |  ...  | 
         |  ...  |   ... |  ...  |  ...  | 
         |  ...  |   ... |  ...  |  ...  | 
-        
+
         Ce tableau s'appelle la **table de vérité** du circuit.
 
 2. Déduire des observations précédentes le rôle de ce circuit logique.
@@ -67,8 +67,9 @@ On utilisera le simulateur en ligne [circuitverse](http://circuitverse.org){targ
     ![circuitverse4](./images/C4/cv4.png){: .centre}
 
     3. Poursuivre la réalisation du circuit en ajoutant les additionneurs pour les autres bits.
+
         !!! Aide
-        Attention à bien relier la sortie de l'addition des deux bits précédents `Cout` à la retenue de l'addition suivante `Cin`
+            Attention à bien relier la sortie de l'addition des deux bits précédents `Cout` à la retenue de l'addition suivante `Cin`
     
     4. Vérifier sur les exemples suivants que votre circuit donne les bons résultats :
     * 0100 + 0101 = 1001 (c'est à dire 4 + 5 = 9)
