@@ -28,17 +28,17 @@ En utilisant la video ci-dessus et en faisant éventuellement vos propres recher
     3. Quelles sont les valeurs possibles d'une entrée ou d'une sortie ?
     4. Recopier et compléter le tableau suivant qui donne les valeurs des sorties en fonction des entrées :
 
-        | $e_1$ | $e_2$ | $e_3$ | $s_1$ | $s_2$ |
-        |----|----|----|----|----|
-        | 0  | 0  | 0  |  ...  | ...   |
-        | 0  | 0  | 1  |  ...  | ...  |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-        |  ...  |   ... |  ...  |  ...  | ...   |
-
+        | $e_1$ | $e_2$ |  $s_1$ | $s_2$ |
+        |----|----|----|----|
+        | 0  | 0  | 0  |  ...  |
+        | 0  | 1  | ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        |  ...  |   ... |  ...  |  ...  | 
+        
         Ce tableau s'appelle la **table de vérité** du circuit.
 
 2. Déduire des observations précédentes le rôle de ce circuit logique.
