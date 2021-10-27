@@ -34,10 +34,6 @@ En utilisant la video ci-dessus et en faisant éventuellement vos propres recher
         | 0  | 1  | ...  |  ...  | 
         |  ...  |   ... |  ...  |  ...  | 
         |  ...  |   ... |  ...  |  ...  | 
-        |  ...  |   ... |  ...  |  ...  | 
-        |  ...  |   ... |  ...  |  ...  | 
-        |  ...  |   ... |  ...  |  ...  | 
-        |  ...  |   ... |  ...  |  ...  | 
 
         Ce tableau s'appelle la **table de vérité** du circuit.
 
@@ -133,12 +129,23 @@ Dans cette partie, on utilise un outil en ligne permettant de visualiser le fonc
 2. Même question pour l'expression `(not a) and (not b)`.
 3. Que constater vous ?
 
+{{ exo("Ordre des opérations",[]) }}
+
+1. Faire la table de vérité de l'expression `(a or b) and c`.
+
+    !!! Aide
+        On peut dans un premier temps faire la table de vérité à la main puis vérifier les résultats en simulant le circuit sur [circuitverse](http://circuitverse.org){target=_blank}.
+
+2. Même question pour l'expression `a or (b and c)`.
+3. Les parenthèses sont-elles utiles dans l'écriture des expressions précédentes ? Justifier.
+
+
 {{ exo("Additionneur un bit",[])}}
  1. En vous aidant éventuellement du cours ou du site [circuitverse](http://circuitverse.org){target=_blank} identifier les portes logiques du circuit suivant :
  ![add1](./images/C4/exoadd1.png){: .centre}
  2. Faire la table de vérité de ce circuit.
  3. En construisant ce circuit sur [circuitverse](http://circuitverse.org){target=_blank}, vérifier vos réponses à la question précédente.
- 4. Comparer la table de vérité de ce circuit à celle de l'activité 3. Conclure.
+ 4. Quel est le rôle de ce circuit ?
 
 {{ exo("Opérateur Nand",[])}}
 On note `nand(a,b) = not(a and b)` (*nand* est la contraction de *not* et *and*). En dressant leurs tables de vérités, vérifier que les expressions suivantes sont égales :

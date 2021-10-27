@@ -1,13 +1,16 @@
 \mframe{\Python}
-	\begin{exampleblock}{Exemple d'une boucle {\tt while}}
-		On suppose déjà crée une fonction {\tt carre(c)} qui dessine un carré de côté {\tt c} à partir de la position courante de la tortue.
-		Ecrire un programme Python, permettant de tracer la figure suivante sachant que :
-		\begin{itemize}
-		\item le carré initial à 200 pixels de côté
-		\item le côté des carrés intérieur diminue de dix pourcents à chaque étape
-		\item le plus petit carré a un côté mesurant plus de 5 pixels.
-		\end{itemize}
-		\begin{center}
-			\includegraphics[scale=0.3]{ex_cours.eps}
-		\end{center}
+	\begin{exampleblock}{Exemple}
+		Soit la liste Python : {\tt notes = [17,12,9,11,13,15,8]}, en effectuant des parcours de cette liste, écrire un programme permettant :
+		\begin{enumerate}
+			\item D'écrire les élements de cette liste qui sont supérieurs à 10.
+			\item De calculer la somme des élements de cette liste
+			\item De créer une nouvelle liste à partir de cette liste en ne conservant que les éléments inférieurs ou égaux à 10
+			      \begin{lstlisting}
+	notes = [17,12,9,11,13,15,8]
+	notes_inf_10 = []
+	for note in notes:
+		if note<=10:
+			notes_inf_10.append(note)
+\end{lstlisting}
+		\end{enumerate}
 	\end{exampleblock}
