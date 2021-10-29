@@ -22,9 +22,10 @@ En utilisant la video ci-dessus et en faisant éventuellement vos propres recher
 
 {{ titre_activite("Circuit logique",[]) }}
 
+![circuit](./images/C4/circuit.jpg){: .centre}
+Les entrées du circuit sont les boutons jaunes à gauche et les sorties sont les led (la rouge et la bleue) situées à droite.
+
 1. Observation d'un circuit logique
-    1. Combien d'entrées possède ce circuit ? On les numérotes $e_1,e_2, \dots$
-    2. Même question pour les sorties, on les numérotes $s_1,s_2,\dots$
     3. Quelles sont les valeurs possibles d'une entrée ou d'une sortie ?
     4. Recopier et compléter le tableau suivant qui donne les valeurs des sorties en fonction des entrées :
 
@@ -69,7 +70,7 @@ On utilisera le simulateur en ligne [circuitverse](http://circuitverse.org){targ
     
     4. Vérifier sur les exemples suivants que votre circuit donne les bons résultats :
     * 0100 + 0101 = 1001 (c'est à dire 4 + 5 = 9)
-    * 0111 + 0011 = 1001 (c'est à dire 7 + 3 = 10) 
+    * 0111 + 0011 = 1010 (c'est à dire 7 + 3 = 10) 
 
     !!! Lien "Pour aller plus loin"
         On peut inclure l'affichage digital des nombres en base 10 comme sur une calculatrice, chacun des nombres à additionner est sur 4 bits, pour les afficher utiliser un `HexDisplay` (menu Output). Attention cependant pour regrouper les 4 bits d'un nombre utiliser un `Splitter` dans le menu Misc, il permet de regrouper une entrée de 4 bits en une seule entrée comme demandé par l'afficher hexadécimal. Pour créer le Splitter, entrer 4 comme *bitWidth*, puis "1 1 1 1" comme *bitWidth Split*.
@@ -127,7 +128,7 @@ Dans cette partie, on utilise un outil en ligne permettant de visualiser le fonc
 {{ exo("Tables de vérités !",[]) }}
 1. Faire la table de vérité de l'expression `not(a or b)`.
 2. Même question pour l'expression `(not a) and (not b)`.
-3. Que constater vous ?
+3. Que peut-on en déduire ?
 
 {{ exo("Ordre des opérations",[]) }}
 
@@ -156,7 +157,7 @@ On note `nand(a,b) = not(a and b)` (*nand* est la contraction de *not* et *and*)
 4. Que peut-on en déduire ?
 
 {{ exo("Langage machine",[])}}
-Cet exercice utilise le simulateur de microprocesseur en ligne : [cette page](http://www.peterhigginson.co.uk/RISC/){target=_blank}.
+Cet exercice utilise le simulateur de microprocesseur en ligne  [sur cette page](http://www.peterhigginson.co.uk/RISC/){target=_blank}.
 Ecrire un programme permettant de calculer 1518 + 2543 - 1317 en utilisant les instructions suivantes :
 
 * `MOV Rn,#val` : stocker la valeur `val` dans le registre `Rn`. Par exemple `MOV R3,#42` stocke la valeur 42 dans le registre 3.

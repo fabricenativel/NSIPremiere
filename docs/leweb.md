@@ -19,7 +19,7 @@ En faisant vos propres recherches et en vous aidant de la vidéo ci-dessus, rép
 
 {{ titre_activite("Les éléments d'une page Web",[]) }}
 
-1. Squelette d'une page {{sc("html") }}
+1. Squelette d'une page *Web*<br>
 L'éditeur VS Code, permet d'insérer rapidement la structure de base d'une page web :
 
     * créer un fichier vide appelé `structure.html`,
@@ -42,9 +42,33 @@ L'éditeur VS Code, permet d'insérer rapidement la structure de base d'une page
     </html>
     ```
 
-    1. Un document {{sc("html")}} est constitué d'un *en-tête*, suivi d'un *corps*. Quelles balises délimitent ces deux sections ?
+    1. Un document {{sc("html")}} est constitué d'un *en-tête*, suivi d'un *corps*. Repéré les balises permettant de délimiter :
+        1. Le document {{sc("html")}}
+        2. L'en-tête
+        3. Le corps
     2. L'entête contient une balise `<title>`, quel est son rôle ?
 
+2. Ajout de contenu<br>
+Dans le corps du document, c'est à dire entre les balises `<body>` et `<body>`, insérer le contenu suivant :
+
+```html linenums="1"
+<h1> La recette du carry de poulet
+
+    <h2> Les ingrédients
+        <ul>
+            <li> un poulet découpé en morceaux
+            <li> 3 oignons
+            <li> 1 tomate
+            <li> 5 gousses d'ail
+        </ul>
+    
+    <h2> La préparation
+        <p>Dans de l'huile chaude, faire revenir le poulet</p>
+```
+
+3. Créer un lien
+
+4. Insérer une image
 
 {{ titre_activite("L'apparence d'une page Web",[]) }}
 
