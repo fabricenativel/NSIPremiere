@@ -21,7 +21,7 @@ l’acquisition de compétences.*"
 ### Projet 1 : Programmer un jeu avec une interface graphique
 
 #### Descriptif
-Le but du projet est de programmer un jeu en Python avec une interface graphique. On privilégiera l'utilisation du module `turtle` de Python pour l'interface graphique. Les autres possibilités (notamment le module `pygames` ou `tkinter`) sont déconseillées pour le moment. Les interactions avec le joueur se feront de façon préférentielle via la saisie de chaîne de caractères (`textinput` de `turtle`). Les élèves les plus avancés pourront utiliser la gestion d'événements dans la fenêtre `turtle` (`onclick`, `onkeypress`, ...). On peut s'inspirer du jeu du pendu crée en classe avec l'aide du professeur, mais il faut proposer un jeu différent. Par exemples : Jeu de Nim,Puissance4, Quizz, Morpion, Bataille navales, Pong, Snake, Casse-brique, ...
+Le but du projet est de programmer un jeu en Python avec une interface graphique. On privilégiera l'utilisation du module `turtle` de Python pour l'interface graphique. Les autres possibilités (notamment les modules `pygames` ou `tkinter`) sont déconseillées pour le moment. Les interactions avec le joueur se feront de façon préférentielle via la saisie de chaîne de caractères (`textinput` de `turtle`). Les élèves les plus avancés pourront utiliser la gestion d'événements dans la fenêtre `turtle` (`onclick`, `onkeypress`, ...). On peut s'inspirer du jeu du pendu crée en classe avec l'aide du professeur, mais il faut proposer un jeu différent. Par exemples : Jeu de Nim,Puissance4, Quizz, Morpion, Bataille navales, Pong, Snake, Casse-brique, ...
 
 #### Critères de réussite
 
@@ -38,14 +38,14 @@ Le but du projet est de programmer un jeu en Python avec une interface graphique
 ### Projet 2 : Découverte de la cryptographie
 
 #### Descriptif
-la cryptographie est une des applications majeures de l'informatique. Le but de projet est de réaliser un programme permettant de coder et de décoder un texte à l'aide du code de César, l'une des plus anciens (et des plus simples) méthode de cryptage. Le code de César peut être cassé par analyse fréquentielle, on programmera donc aussi un décodage automatique du code de César en utilisant cette technique. Une autre partie du projet est consacré au chiffrement de Vigenère.
+la cryptographie est une des applications majeures de l'informatique. Le but de projet est de réaliser un programme permettant de coder et de décoder un texte à l'aide du code de César, l'une des plus anciens (et des plus simples) méthode de cryptage. Le code de César peut être cassé par analyse fréquentielle ou par force brute, on programmera donc aussi un décodage automatique du code de César en utilisant ces techniques. Une autre partie du projet est consacré au chiffrement de Vigenère.
 
 #### Critères de réussite
 * **[4pts]** Comprendre le code de César et la méthode pour le décrypter. On pourra faire ses propres recherches ou consulter la vidéo suivante (en anglais, mais les sous-titres français sont disponibles):
 <div class="centre"><iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
 Préparer une explication orale de la méthode de cryptage ainsi que le la technique de décryptage, inclure des exemples. Expliquer comment ce code peut être cassé.
 
-* **[4 pts]** Réaliser un programme permettant à un utilisateur de crypter ou de décrypter un texte avec la clé de son choix. Pour simplifier, on suppose que le texte est consitué uniquement de *lettres majuscules non accentuées*. Afin de vous aider, on donne la fonction `crypte_caractere` ci-dessous . Attention, cette fonction reste à compléter et ne fonctionne pas en l'état.
+* **[4 pts]** Réaliser un programme permettant à un utilisateur de crypter ou de décrypter un texte avec la clé de son choix. Pour simplifier, on suppose que le texte est constitué uniquement de *lettres majuscules non accentuées*. Afin de vous aider, on donne la fonction `crypte_caractere` ci-dessous . Attention, cette fonction reste à compléter et ne fonctionne pas en l'état.
 
 ```python3
 def crypte_caractere(caractere,cle):
@@ -78,7 +78,7 @@ Q SGH HFSG PWSB AOWG WZ FSGHS SBQCFS PSOIQCID O TOWFS
 
 #### Descriptif 
 La bibliothèque   {{sc("pil")}} pour Python Imaging Library est une célèbre librairie python permettant de modifier et de créer des images sous de nombreux formats. Vous pouvez télécharger ci-dessous, un  notebook permettant de découvrir cette librairie :
-{{telecharger("Notebook découverte PIL","./notebook/InitiationPIL.ipynb") }} 
+{{ telecharger("Notebook découverte de PIL","./notebook/pil.ipynb") }}
 Le but de ce projet est d'utiliser cette librairie afin de créer des filtres applicables sur n'importe quel image (par exemple un flou ou une pixellisation). Dans un premier temps on se familiarisera avec les fonctionnalités de la librairie en produisant des images à l'aide de PIL.
 ####  Critère de réussite : 
 
