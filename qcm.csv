@@ -114,7 +114,7 @@ def mystere(l,a):
 n = 5
 p = 1
 while n>0:
-p = p*2
+    p = p*2
 ```
 ",Une boucle infinie,Une boucle se répétant cinq fois,Une `Syntax Error`,Une `Indentation Error`,D,Langages et programmation,5,
 60,"Quelles seront les valeurs des variables `s` et `i` à la fin de l'exécution du programme suivant ?
@@ -126,7 +126,7 @@ while i < 5:
     s = s + i
     i = i + 1
 ```
-",`s=10` et `i=4`,`s=10` et `i=5`,`s=15` et `i=5`,Aucunes car ce programme produit une erreur.,A,Langages et programmation,5,
+",`s=10` et `i=4`,`s=10` et `i=5`,`s=15` et `i=5`,Aucunes car ce programme produit une erreur.,B,Langages et programmation,5,
 61,"Quelle instruction permet d'exécuter une boucle tant que les variables `a` et `b` sont toutes les deux inférieures strictement à 10.
 ",`while a<10 or b<10`,`while a<10 or b<10:`,`while a<10 and b<10`,`while a<10 and b<10:`,D,Langages et programmation,5,
 62,"Quel est la valeur de la variable `b` après exécution de ce programme :
@@ -161,5 +161,5 @@ compteur += 1
 |1|0|?|?|
 |1|1|0|1|
 ",0 et 0,0 et 1,1 et 0,1 et 1,A,Architectures matérielles et systèmes d'exploitation,4,
-74,Que vaut la variable `a` après exécution de l'instruction `a=[0.5*x for x in range(4)]` ?,"[0.0,0.5,1.0,1.5,2.0]","[0,1,2,3,4]","[0,1,2,3]","[0.0,0.5,1.0,1.5]",D,Langages et programmation,5,
+74,Que vaut la variable `a` après exécution de l'instruction `a=[0.5*x for x in range(4)]` ?,"`[0.0,0.5,1.0,1.5,2.0]`","`[0,1,2,3,4]`","`[0,1,2,3]`","`[0.0,0.5,1.0,1.5]`",D,Langages et programmation,5,
 75,"Si `alpha=[""A"",""B"",""C"",""D"",""E"",""F"",""G"",""H""]` quelle est l'expression permettant d'accéder à la lettre ""E"" ?",`alpha4`,`alpha[4]`,`alpha(4)`,`alpha.E`,B,Langages et programmation,5,

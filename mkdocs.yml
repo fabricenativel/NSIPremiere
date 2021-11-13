@@ -30,6 +30,8 @@ nav:
     - docs.md
   - "<img src='https://fabricenativel.github.io/NSIPremiere/images/icones/lightbulb.svg' width=16px height=16px>&thinsp; Projets" :
     - projets.md
+  - "<img src='https://fabricenativel.github.io/NSIPremiere/images/icones/links.svg' width=16px height=16px>&thinsp; Liens" :
+    - liens.md
   - "<img src='https://fabricenativel.github.io/NSIPremiere/images/icones/information.svg' width=16px height=16px>&thinsp; A propos" :
     - apropos.md
 

@@ -190,7 +190,6 @@ Ajouter les instructions permettant  la prise en compte de la victoire du joueur
 
 {{ exo("Lignes",[],0)}}
 
-
 1. En utilisant une boucle `for` contenant une instruction conditionnelle, écrire un programme Python permettant de tracer la figure suivante :
 ![Lignes](./images/C5/ex1.png){: .imgcentre}
 La ligne centrale est tracé avec un crayon d'épaisseur 4 et en couleur *darkred*, toutes les autres lignes sont d'épaisseur 2 et en couleur *navy*.

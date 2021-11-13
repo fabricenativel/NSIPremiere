@@ -60,7 +60,7 @@ def define_env(env):
         2 : ["typesbase","Représentation des entiers et des caractères",2,"codage.md"],
         3 : ["python","Initiation à Python avec Turtle - Partie 1",3,"ippt1.md"],
         4 : ["os","Architecture matérielle",1,"architecture.md"],
-        5 : ["python","Initiation à Python avec Turtle - Partie 2",3,"ippt1.md"],
+        5 : ["python","Initiation à Python avec Turtle - Partie 2",3,"ippt2.md"],
         6 : ["algorithmique","Notions d'algorithmique",2,"notionsalgo.md"],
         7 : ["donneestable","Lecture et traitement de données en table",2,"donneestable.md"],
         8 : ["web","Le web",2,"leweb.md"],
