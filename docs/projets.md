@@ -87,7 +87,7 @@ Le but de ce projet est d'utiliser cette librairie afin de créer des filtres ap
 ![logo python](./images/Projets/python-logo.png){: .imgcentre}
 ![logo python miroir](./images/Projets/python-logo-miroir.png){: .imgcentre}
 
-* **[6pts]**  Réalisation d'un filtre sur image. Créer et tester le filtre sous la forme d'une fonction Python applicable à une image. Par exemple un filtre de pixellisation, voir par exemple : [le filtre de pixellisation](https://docs.gimp.org/2.8/fr/plug-in-pixelize){target=_blank}} ou encore un filtre de flou ou de contour d'une image. Attention, il ne faut pas utiliser un filtre déjà existant dans {{sc("pil")}}, le but est d'en créer un en utilisant exclusivement les fonctions de manipulation de pixels.
+* **[6pts]**  Réalisation d'un filtre sur image. Créer et tester le filtre sous la forme d'une fonction Python applicable à une image. Par exemple un filtre de pixellisation, voir par exemple : [le filtre de pixellisation](https://docs.gimp.org/2.8/fr/plug-in-pixelize.html){target=_blank} ou encore un filtre de flou ou de contour d'une image. Attention, il ne faut pas utiliser un filtre déjà existant dans {{sc("pil")}}, le but est d'en créer un en utilisant exclusivement les fonctions de manipulation de pixels.
 
 
 ### Projet 4 : Code barres (code 128)
