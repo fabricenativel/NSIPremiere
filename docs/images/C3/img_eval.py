@@ -3,10 +3,7 @@ import grille
 
 papier = turtle.Screen()
 crayon = turtle.Turtle()
-papier.setup(width=550,height=350)
 
-
-papier.bgcolor("lightgray")
 crayon.color("darkred")
 crayon.pensize(5)
 
@@ -24,6 +21,9 @@ def ligneoal(x1,y1,a,l):
     crayon.setheading(a)
     crayon.forward(l)
 
+
+def f(x):
+    return x**2/100+x-200
 
 '''
 crayon.penup()
@@ -55,10 +55,27 @@ def carre_cercle(x,y,r):
     crayon.forward(r/2)
     crayon.circle(r/2)
 
-carre_cercle(0,0,100)
-crayon.color("navy")
-carre_cercle(-100,-100,100)
 
+ligneoe(-300,0,300,0)
+ligneoe(0,-300,0,300)
+abscisses = [x for x in range(-300,310,10)]
+ordonnees = [f(x) for x in abscisses]
+crayon.pencolor("navy")
+crayon.pensize(3)
+crayon.penup()
+crayon.shape("circle")
+crayon.shapesize(0.5)
+for i in range(len(abscisses)):
+    crayon.goto(abscisses[i],ordonnees[i])
+    crayon.stamp()
+    crayon.pendown()
+
+crayon.pencolor("darkred")
+crayon.pensize(3)
+for abs in range(-300,310,50):
+    ligneoe(abs,-10,abs,10)
+    ligneoe(-10,abs,10,abs)
+    
 
 #a.trace()
 papier.update()
@@ -79,7 +96,7 @@ grad2 =grille.Graduation(10,5,sub=5,show_label=False)
 grad2.affiche()
 
 
-papier.title("Motif")
+papier.title("Graphique")
 
 
 crayon.hideturtle()
