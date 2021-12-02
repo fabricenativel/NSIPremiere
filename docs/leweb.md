@@ -19,6 +19,12 @@ En faisant vos propres recherches et en vous aidant de la vidéo ci-dessus, rép
 
 {{ titre_activite("Les éléments d'une page Web",[]) }}
 
+!!! Attention
+    Dans cette activité, on commence à créer des pages HTML, pour visualiser la page produite, deux solutions s'offrent à vous :
+
+    1. installer l'extension *HTML Preview* de VS code, dans ce cas vous pourrez afficher côte à côte dans VS Code le code source de votre page HTML ainsi que sa prévisualisation.
+    2. ouvrir à l'aide de *Firefox* le fichier local de votre page HTML (taper ++ctrl+o++ dans *Firefox*). Après avoir modifié le source HTML dans VS Code, mettre à jour l'affichage dans *Firefox* en appuyant sur ++f5++ pour actualiser.
+
 1. Squelette d'une page *Web*<br>
 L'éditeur VS Code, permet d'insérer rapidement la structure de base d'une page web :
 
@@ -46,31 +52,53 @@ L'éditeur VS Code, permet d'insérer rapidement la structure de base d'une page
         1. Le document {{sc("html")}}
         2. L'en-tête
         3. Le corps
-    2. L'entête contient une balise `<title>`, quel est son rôle ?
+    2. L'en-tête contient une balise `<title>`, quel est son rôle ? 
 
 2. Ajout de contenu<br>
 Dans le corps du document, c'est à dire entre les balises `<body>` et `<body>`, insérer le contenu suivant :
 
-```html linenums="1"
-<h1> La recette du carry de poulet
+    ```html linenums="1"
+    <h1> La recette du carry de poulet
 
-    <h2> Les ingrédients
-        <ul>
-            <li> un poulet découpé en morceaux
-            <li> 3 oignons
-            <li> 1 tomate
-            <li> 5 gousses d'ail
-        </ul>
-    
-    <h2> La préparation
-        <p>Dans de l'huile chaude, faire revenir le poulet</p>
-```
+        <h2> Les ingrédients
+            <ul>
+                <li> un poulet découpé en morceaux
+                <li> 3 oignons
+                <li> 1 tomate
+                <li> 5 gousses d'ail
+            </ul>
+        
+        <h2> La préparation
+            <p>Dans de l'huile chaude, faire revenir le poulet</p>
+    ```
 
-3. Créer un lien
+3. Observer le résultat obtenu dans l'affichage et en déduire le rôle des balises suivantes :  
 
-4. Insérer une image
+    1. `<h1>` et `<h2>`
+    2. `<ul>` et `<li>`
+    3. `<p>`
+
+4. Ajouter un sous-titre 'Accompagnements' dans la page Web
+5. Dans ce sous-titre créer une liste avec deux éléments : "riz blanc et grains", "riz jaune".
+6. Ajouter un paragraphe au début de la recette dans lequelle on écrira "Le carry de poulet est une recette de cuisine traditionnel de l'ile de la Réunion"
+7. Modifier le paragraphe crée à la question précédente en:
+
+    ```html
+        Le carry de poulet est une recette de cuisine traditionnel de l'<a href="https://fr.wikipedia.org/wiki/La_R%C3%A9union">ile de la Réunion</a>
+    ```
+
+8. Quelle est la modification produite dans la page ?
+9. Ajouter un lien dans votre page Web sur le mot "Oignon" qui permet d'accéder à l'adresse `https://fr.wikipedia.org/wiki/Oignon`
+
+10. Rechercher vous-même sur le *Web* la balise permettant d'insérer une image dans une page HTML puis l'utiliser pour insérer une image illustrant la recette du carry de poulet (attention à utiliser une image libre de droit)
 
 {{ titre_activite("L'apparence d'une page Web",[]) }}
+
+!!! Important
+    Les balises HTML permettent de **structurer** le contenu d'une page web, en définissant les titres, les paragraphes, ...
+    Pour modifier l'**apparence** d'une page, on a recours au *css* (cascadind style sheet) qui permettent de modifier l'apparence du contenu de la page
+
+{{telecharger("Une courte introduction à css","./pdf/C8/Act8-2.pdf")}}
 
 ## Cours
 
