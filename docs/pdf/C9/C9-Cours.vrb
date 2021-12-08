@@ -1,0 +1,14 @@
+\mframe{\Algotris}
+	\begin{block}{Implémentation du tri par insertion en Python}
+		En supposant qu'on dispose déjà de :
+		\begin{itemize}
+			\item la fonction \texttt{insere} qui permet d'insérer un élément au bon emplacement dans une liste \textit{déjà triée},
+		\end{itemize}
+		\begin{lstlisting}
+# Tri par insertion
+def tri_insertion(liste):
+    for ind in range(len(liste)):
+        # insere permet d'insérer au bon emplacement entre les indices 0 et ind
+        insere(liste,liste[ind],ind)
+\end{lstlisting}
+	\end{block}
