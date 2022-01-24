@@ -123,12 +123,24 @@ Corriger les erreurs dans les fragments de code HTML suivant :
 
 {{ exo("Structurer une page Web",[]) }}
 
+Quelles sont les balises {{sc("html")}} permettant de délimiter :
 
-
+1. Un titre ou un sous titre ?
+2. Un paragraphe ?
+3. Un lien ?
+4. Un tableau ? Une ligne d'un tableau ? Une case dans un tableau ?
 
 
 {{ exo("Modifier l'apparence d'une page web",[]) }}
 
+1. Enregistrer dans le répertoire suivant le fichier {{sc("html")}} suivant :
+{{ telecharger("Le rougail saucisess","./files/C8/rougailsaucisses.html")}}
+Pour cela, vous pouvez par exemple cliquer à droite sur le bouton ci-dessus, puis sélectionner "Enregistrer la cible du lien sous ..."
+2. Par la méthode de votre choix (mais de préférence en créant une feuille de style dans un fichier séparé), modifier l'apparence de cette page web de sorte que:
+    * Le fond de la page soit de couleur noire,
+    * Les liens soient jaunes et pas soulignés,
+    * Les titres de niveau 1 soient en gras et en blanc,
+    * Les titres de niveau 2 soient en bleu clair, encadré avec un trait de couleur rouge
 
 
 {{ exo("Créer un mini-site",[]) }}
@@ -137,5 +149,5 @@ Réaliser  un mini site *Web*, en utilisant le html et les feuilles de style. Le
 
 * au moins 5 pages reliées entre elles par des liens internes et des liens vers des sites extérieurs
 * au moins 5 images, attention à utiliser des images *libres de droits* ou à créer vos propres illustrations pour votre site
-* au moins une page de votre site devra contenir des informations organisées sous la forme d'un tableau et donc utiliser les balises `<table>` et `<table>`.
+* au moins une page de votre site devra contenir des informations organisées sous la forme d'un tableau et donc utiliser les balises `<table>` et `</table>`.
 * L'apparence du site sera uniformisé (c'est à dire que d'une page à l'autre on retrouvera les mêmes couleurs et la même présentation). Vous devrez pour cela utiliser une feuille de style dans un fichier séparé.
