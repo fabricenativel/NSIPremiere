@@ -9,13 +9,13 @@ import time
 # Les constantes
 LARGEUR_ECRAN = 1000
 HAUTEUR_ECRAN = 600
-NB = 10
+NB = 6
 MARGE = 40
 ECART = 20
 LARGEUR_CARTE = (LARGEUR_ECRAN-MARGE*2)//NB - ECART
 HAUTEUR_CARTE = HAUTEUR_ECRAN // 3 - 2 * MARGE
-VMIN = 100
-VMAX = 999
+VMIN = 0
+VMAX = 20
 COULEUR_BASE = "black"
 COULEUR_SPOT = "red"
 LIGNE_CARTE = MARGE + HAUTEUR_CARTE*2
@@ -172,7 +172,7 @@ def pause_tri(x,y):
         tortue_pause.color("black")
         tortue_pause.write(chr(0x23F8),align="center",font=("Arial",42,"bold"))
         time.sleep(WAIT_BLINK)
-        papier.listen()
+        # papier.listen()
 
 pause = False
 papier.onscreenclick(pause_tri)

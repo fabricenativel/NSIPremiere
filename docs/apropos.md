@@ -1,6 +1,8 @@
 hide: - navigation  in apropos.md
 # A Propos
 
+La dernière mise à jour du site date du  {{ git_revision_date }}
+
 ## Contenu
 
 Vous trouverez sur ce site le contenu du cours de NSI en classe première du [lycée Mémona Hintermann-Afféjee](http://lycee-hintermann.ac-reunion.fr/){target=_blank}.

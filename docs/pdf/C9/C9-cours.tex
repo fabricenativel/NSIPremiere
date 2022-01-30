@@ -34,9 +34,9 @@
 	\mframe{\Algotris}
 	\begin{alertblock}{Algorithme du tri par sélection}
 		\begin{itemize}
-			\item<1-> Rechercher le plus petit élément de la liste
+			\item<1-> Rechercher le plus petit élément de la liste à partir de l'indice 0
 			\item<2-> Echanger cet élément avec le premier de la liste
-			\item<3-> Recherche le second plus petit élément de la liste
+			\item<3-> Rechercher le plus petit élément de la liste à partir de l'indice 1
 			\item<4-> Echanger cet élément avec le second de la liste
 			\item<5-> Et ainsi de suite jusqu'à ce que la liste soit entièrement triée
 		\end{itemize}
@@ -50,13 +50,13 @@
 	\begin{exampleblock}{Exemple}
 		\onslide<1->{On considère la liste \texttt{[12,10,18,15,14]} décrire les étapes d'un tri par sélection sur cette liste}
 		\begin{enumerate}
-			\item<2->{Sélection du plus petit élément : \texttt{[12,\textcolor{red}{10},18,15,14]}}
+			\item<2->{Sélection du plus petit élément depuis l'indice 0 : \texttt{[12,\textcolor{red}{10},18,15,14]}}
 			\item<3->{Placement en première position de liste : \texttt{[\textcolor{red}{10},12,18,15,14]}}
-			\item<4->{Sélection du second plus petit élément : \texttt{[10,\textcolor{red}{12},18,15,14]}}
+			\item<4->{Sélection du plus petit élément depuis l'indice 1 : \texttt{[10,\textcolor{red}{12},18,15,14]}}
 			\item<5->{Placement en deuxième position de liste: \texttt{[10,\textcolor{red}{12},18,15,14]}}
-			\item<6->{Sélection du 3\textsuperscript{e} plus petit élément : \texttt{[10,12,18,15,\textcolor{red}{14}]}}
+			\item<6->{Sélection du plus petit élément depuis l'indice 2 : \texttt{[10,12,18,15,\textcolor{red}{14}]}}
 			\item<7->{Placement en 3\textsuperscript{e} de liste: \texttt{[10,12,\textcolor{red}{14},15,18]}}
-			\item<8->{Sélection du 4\textsuperscript{e} plus petit élément : \texttt{[10,12,14,\textcolor{red}{15},18]}}
+			\item<8->{Sélection du plus petit élément depuis l'indice 3 : \texttt{[10,12,14,\textcolor{red}{15},18]}}
 			\item<9->{Placement en 4\textsuperscript{e} position de liste: \texttt{[10,12,14,\textcolor{red}{15},18]}}
 		\end{enumerate}
 	\end{exampleblock}
@@ -185,9 +185,9 @@ def tri_insertion(liste):
 		\end{itemize}
 	\end{block}
 	\onslide<5->{
-		\begin{exampleblock}{Exemple}
+		\begin{alertblock}{A retenir !}
 			Les algorithmes de tri par insertion ou par sélection ont une complexité quadratique.
-		\end{exampleblock}}
+		\end{alertblock}}
 \end{frame}
 
 

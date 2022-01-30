@@ -169,3 +169,29 @@ compteur += 1
 79,"Parmi les problèmes de rendu de monnaie suivants, cocher celui pour lequel l'algorithme glouton ne donne **pas** un résultat optimal :","Somme à rendre = 18 et valeurs = 13,6,3,1","Somme à rendre = 55 et valeurs = 20,10,5,2,1","Somme à rendre = 27 et valeurs = 10,6,3,1","Somme à rendre = 34 et valeurs = 20,10,5,2,1",A,Algorithmique,13,
 80,"On considère un problème du sac à dos avec un poids maximum de 2 kg et les objets suivants : ordinateur (1500 €, 1.8 kg), téléphone (900 €, 1.2 kg) et livre (700 €, 0.7 kg). On suppose qu'on utilise un algorithme glouton classant les objets par **valeur décroissante**. Alors :",La solution optimale est téléphone+livre et celle de l'algorithme glouton est ordinateur seul,La solution optimale et celle de l'algorithme glouton sont les mêmes : téléphone+livre,La solution optimale et celle de l'algorithme glouton sont les mêmes : ordinateur seul,La solution optimale est ordinateur seul et celle de l'algorithme glouton est téléphone+livre ,A,Algorithmique,13,
 81,"Pour le problème du sac à dos, l'algorithme glouton consiste à :",Générer des combinaisons aléatoires d'objets et les tester,Tester toutes les combinaisons possibles et prendre la meilleure,Classer les objets suivant un critère et prendre les mieux classés en premier,Classer les objets afin d'en éliminer certains puis choisir parmi ceux qui restent,C,Algorithmique,13,
+82,"On applique l'algorithme du tri par sélection à la liste `[9,11,7,16]`, après la première étape, le contenu de la liste sera :","`[11,9,7,16]`","`[7,11,9,16]`","`[16,11,7,9]`",Aucune des propositions ci-dessus,B,Algorithmique,9,
+83,"On applique l'algorithme du tri par insertion à la liste `[9,11,7,16]`, quel sera le contenu de la liste après le premier échange ?","`[11,9,7,16]`","`[9,11,16,7]`","`[9,7,11,16]`",Aucune des propositions ci-dessus,C,Algorithmique,9,
+84,L'algorithme du tri par insertion a une complexité :,logarithmique,linéaire,quadratique,exponentielle,C,Algorithmique,9,
+85,"Un programme de tri par insertion prend environ 1 seconde pour trier une liste de $10\,000$ éléments, combien de temps prendra-t-il environ pour trier une liste de $100\,000$ éléments ?",1 seconde,10 secondes,100 secondes,1000 secondes,C,Algorithmique,9,
+86,"Quelles sont les deux lignes manquantes dans la fonction ci-dessus qui renvoie le minimum d'une liste non vide :
+```python linenums=""1""
+def min_liste(liste):
+    elt_min = ....
+    for elt in liste:
+        if elt<elt_min:
+            ......
+    return elt_min
+```",La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt_min=elt`,La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt_min=elt`,D,Algorithmique,9,
+87,"Dans le programme Javascript ci-dessous, quelle est la notation qui délimite le bloc d'instructions exécuté à chaque passage dans la boucle `while` ?
+```javascript
+var i=0
+while (i<10) {
+    alert(i);
+    i = i + 1;
+}
+alert(""Fin"")
+```",Le fait que les instructions soient encadrées entre `{` et `}`,Le fait que les instructions soient indentées de 4 caractères,Le fait que les instructions suivent le mot clé `while`,Le fait que les instructions suivent la parenthèse fermante `)`,A,Interactions entre l'homme et la machine sur le Web,12,
+88,Quel mot clé permet de commencer la définition d'une fonction en Javascript ?,`def`,`return`,`var`,`function`,D,Interactions entre l'homme et la machine sur le Web,12,
+89,"Parmi les balises HTML ci-dessous, quelle est celle qui permet à l'utilisateur de saisir son nom dans un formulaire en respectant la norme HTML ?","`<input type=""text"">`","`<input type=""name"">`",`<select/>`,`<form>`,A,Interactions entre l'homme et la machine sur le Web,12,
+90,"Parmi les propriétés suivantes d'une balise `<button>` dans une page HTML, laquelle doit être rédigé en Javascript ?",La propriété `name`,La propriété `id`,La propriété `onclick`,la propritété   `type`,C,Interactions entre l'homme et la machine sur le Web,12,
+91,Quelle est la machine qui va exécuter un programme Javascript inclus dans une page HTML ?,"La machine de l'utilisateur ou le serveur, suivant la confidentialité des données manipulées.","La machine de l'utilisateur ou le serveur, selon leurs disponibilités",Le serveur sur lequel est stocké la page HTML,La machine de l'utilisateur sur laquelle s'exécute le navigateur web,D,Interactions entre l'homme et la machine sur le Web,12,

@@ -61,8 +61,6 @@ Quatre ordinateurs A,B,C et D sont reliés en réseau par un routeur. Des donné
 4. L'ordinateur C peut-il envoyer des données en même temps vers D ? 
 
 
-{{ titre_activite("Couches d'un réseau",[]) }}
-
 {{ titre_activite("Protocole du bit alterné",[]) }}
 Alice envoie un message découpé en cinq paquets $P_1,P_2,P_3,P_4$ et $P_5$ à Bob :
 ![pba0](./images/C10/pba1.png){: .imgcentre width=400px}
@@ -104,5 +102,52 @@ Certains paquets peuvent être en retard ou perdus, dans l'exemple suivant, $P_1
 
 ## Exercices
 
-{{ exo("Masque de sous réseau",[],0) }}
+{{ exo("Adresse IP",[],0)}}
 
+1. Rappeler le format d'une adresse {{sc("ip")}}v4 valide.
+2. Les adresses {{sc("ip")}} suivantes sont-elles valides ?
+    * 192.32.257.110
+    * 129.21.10.
+    * 212.225.0.132
+    * 44.125.80.33.112
+3. Ecrire une fonction Python `valide_ip(adresse)` qui  renvoie `True` si `adresse` est une adresse {{sc("ip")}} valide et `False` sinon.
+4. Calculer le nombre total d'adresses {{sc("ip")}}v4 possibles.
+
+    !!! aide
+        On pourra utiliser la méthode `split` des chaines de caractères en Python.
+        
+4. Tester votre fonction sur les exemples de la question 2.
+
+{{ exo("Ligne de commande",[])}}
+
+1. La commande `ifconfig` permet d'afficher l'état des interfaces réseau actives. Tester cette commande et en déduire l'adresse IP de votre machine ainsi que son adresse {{sc("mac")}}.
+2. La commande `traceroute` affiche la liste des adresses IP traversées par les paquets jusqu'à la destination donnée en paramètre. Tester par exemple `traceroute wikipedia`. Quel est la première adresse {{sc("ip")}} traversé par un paquet lorsque vous lancez cette commande depuis le lycée ? Pourquoi ?
+3. Faire vos propres recherche sur la commande `ping`, quel est son utilité ?
+
+    !!! Lien "Pour aller plus loin"
+        Pour aller plus loin, rechercher la signification du champ `ttl` d'une commande ping. Que deviennent les paquets qui ne trouvent pas leur destination ?
+
+{{ exo("Masque de sous réseau",[]) }}
+
+!!! Attention
+    Cette notion n'ayant pas été traitée en cours, avant de faire l'exercice on pourra lire le résumé ci-dessous ou faire ses propres recherches sur le *Web* (en commençant par exemple [sur wikipedia](https://fr.wikipedia.org/wiki/Sous-r%C3%A9seau){target=_blanl}).
+
+Deux machines ne peuvent communiquer que si elles sont sur le même réseau, c'est à dire que leurs adresses {{sc("ip")}} démarre par une partie commune. La longueur de cette partie commune est définie par le **masque de sous réseau**. Pour la connaître, on écrit le masque de sous réseau en binaire. Le nombre de 1 en début de masque donne la longueur de la partie commune dans les adresses IP. Par exemple pour le masque `255.255.254.0` donne en écriture binaire `11111111.11111111.111111110.00000000`. La partie commune doit donc être de 23 bits. Un masque de 23 bits peut se noter de façon plus concise `/23` (notation sc("cidr")). Pour savoir si deux machines peuvent communiquer on écrit leurs adresses IP en binaire et on regarde si les 23 premiers bits sont identiques ou non.
+
+1. Donner la notation {{sc("cidr")}} du masque `255.255.240.0`
+2. On considère trois machines A (`192.168.130.10`), B (`192.168.155.100`) et C (`192.168.144.203`) :
+    1. Quelles machines peuvent communiquer entre elles ?
+    2. Créer ce réseau dans filius
+    3. Confirmer à l'aide de `ping` vos réponses à la question 2.a
+3. Dans un sous réseau, deux adresses sont réservées, l'une pour le *broadcast* (envoi à tout le réseau) et l'autre pour le réseau lui-même. Par exemple pour le masque `255.255.254.0`, on peut avoir au maximum $2^9-2=510$ ordinateurs dans le sous réseau. Sur le sous réseau domestique d'une livebox, le masque de sous réseau est généralement `255.255.255.0`. Combien d'ordinateurs peuvent être connectés dans ce cas ?
+4. Déterminer le masque de sous réseau du réseau du lycée à l'aide de la commande `ifconfig`, combien d'ordinateurs peuvent être connectés sur ce réseau ?
+5. Donner le plus petit masque pour lequel le sous réseau pourra accueillir 1500 machines.
+
+{{ exo("Protocole du bit alterné",[])}}
+
+1. Le protocole du bit alterné permet-il de corriger la *totalité* des erreurs pouvant survenir ?
+2. Fonctionnement du protocole du bit alterné :
+    1. L'émetteur a envoyé un paquet $P_5$ avec le bit de contrôle à 1, il reçoit un accusé de reception avec le bit de contrôle à 0. Quelle sera la réaction de l'émetteur ?
+    2. Le récepteur a envoyé un accusé de reception avec le bit de contrôle à 0. Il reçoit un paquet avec le bit de contrôle à 0. Quelle sera la réaction du récepteur ?
+    3. Le récepteur a envoyé un accusé de reception avec le bit de contrôle à 0. Il reçoit un paquet avec le bit de contrôle à 1. Quelle sera la réaction du récepteur ?
+3. Proposer un scénario dans lequel le protocole du bit alterné échoue à corriger une erreur de transmission.
