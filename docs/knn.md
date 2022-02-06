@@ -58,7 +58,7 @@ Dans cette activité, vous aurez aussi besoin du jeu de données suivant :
 
 {{ exo("Appliquer l'algorithme des k plus proches voisins",[],0) }}
 
-![knn-ex1](/images/C17/knn-ex1.png){: .imgcentre}
+![knn-ex1](./images/C17/knn-ex1.png){: .imgcentre}
 
 Quel sera le résultat de l'algorithme des $k$ plus proches voisins pour classer le point gris central lorsque :
 
