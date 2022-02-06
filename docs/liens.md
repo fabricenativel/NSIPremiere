@@ -7,6 +7,13 @@ hide: - navigation  in apropos.md
 * [Guide du débutant](https://docs.python.org/fr/3/tutorial/index.html){target=_blank}
 * [Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/){target=_blank} 
 
+## Autres sites proposant des cours de NSI
+
+* [Pixees informatique lycée ](https://pixees.fr/informatiquelycee/){target=_blank}
+* [Cours de Vincent-Xavier Jumel](https://lamadone.frama.io/informatique/premiere-nsi/index.html){target=_blank}
+* [Cours du lycée du Parc à lyon](https://frederic-junier.gitlab.io/parc-nsi/){target=_blank}
+* [Les cours en Vidéo Lumni](https://www.lumni.fr/lycee/premiere/specialites/numerique-et-sciences-informatiques){target=_blank}
+
 ## Concours et initiation ludiques à la programmation
 
 * [py-rates](https://py-rates.fr/){target=_blank} résoudre les huit niveaux d'un jeu de plateau à l'aide de programmes en python.
@@ -19,10 +26,7 @@ hide: - navigation  in apropos.md
 * [Python Challenge](http://www.pythonchallenge.com/){target=_blank} : un site d'énigmes à résoudre en utilisant Python (en anglais).
 * [Codingame](https://www.codingame.com/){target=_blank} : site de défi de programmation, attention le niveau est élevé.
 
-## Autres sites proposant des cours de NSI
 
-* [Pixees informatique lycée ](https://pixees.fr/informatiquelycee/){target=_blank}
-* [Les cours en Vidéo Lumni](https://www.lumni.fr/lycee/premiere/specialites/numerique-et-sciences-informatiques){target=_blank}
 
 
 

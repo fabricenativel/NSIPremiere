@@ -195,3 +195,15 @@ alert(""Fin"")
 89,"Parmi les balises HTML ci-dessous, quelle est celle qui permet à l'utilisateur de saisir son nom dans un formulaire en respectant la norme HTML ?","`<input type=""text"">`","`<input type=""name"">`",`<select/>`,`<form>`,A,Interactions entre l'homme et la machine sur le Web,12,
 90,"Parmi les propriétés suivantes d'une balise `<button>` dans une page HTML, laquelle doit être rédigé en Javascript ?",La propriété `name`,La propriété `id`,La propriété `onclick`,la propritété   `type`,C,Interactions entre l'homme et la machine sur le Web,12,
 91,Quelle est la machine qui va exécuter un programme Javascript inclus dans une page HTML ?,"La machine de l'utilisateur ou le serveur, suivant la confidentialité des données manipulées.","La machine de l'utilisateur ou le serveur, selon leurs disponibilités",Le serveur sur lequel est stocké la page HTML,La machine de l'utilisateur sur laquelle s'exécute le navigateur web,D,Interactions entre l'homme et la machine sur le Web,12,
+92,"Le nombre à virgule $0,3_{10}$ :",est représenté exactement en machine par $3/10$,"est représenté exactement en machine par $0,11_{2}$",ne peut pas être représenté exactement en machine car c'est un nombre à virgule,ne peut pas être représenté exactement car son écriture dyadique est illimitée,D,Types et valeurs de base,16,
+93,"Le nombre à virgule $0,25_{10}$ :","est représenté exactement en machine par $0,1_{2}$","est représenté exactement en machine par $0,01_{2}$",ne peut pas être représenté exactement en machine car c'est un nombre à virgule,ne peut pas être représenté exactement car son écriture dyadique est illimitée,B,Types et valeurs de base,16,
+94,"Quelle est  l'écriture décimal de $0,11_{2}$ ?","$0,5$","$0,25$","$0,75$","$0,3$",C,Types et valeurs de base,16,
+95,"Quelle est  l'écriture dyadique de $0,625_{10}$ ?","$0,101_{2}$","$0,011_{2}$","$0,110_{2}$","$0,111_{2}$",A,Types et valeurs de base,16,
+96,"Un seul des nombres suivants n'a pas une écriture finie en base 2, lequel ?","$1,25_{10}$","$1,5_{10}$","$1,6_{10}$","$1,75_{10}$",C,Types et valeurs de base,16,
+97,A quelle condition peut-on concaténer deux tables ?,il suffit qu'elles aient un descripteur commun,elles doivent avoir des descripteurs identiques,elles doivent avoir au moins un enregistrement identique,elles doivent avoir le même nombre de colonnes,B,Traitement de données en table,14,
+98,A quelle condition peut-on effectuer la jointure de deux tables ?,il faut qu'elles aient un descripteur commun,elles doivent avoir le même nombre de ligne,elles doivent avoir au moins un enregistrement identique,elles doivent avoir le même nombre de colonnes,A,Traitement de données en table,14,
+99,"Quelle instruction permettra de réaliser la concaténation des deux tables ci-dessous contenant des noms de communes et leur code postal (CP) :
+```python
+t1 = [{""Nom"":""Saint-Denis"";""CP"":97400},{""Nom"":""Saint-Paul"";""CP"":97411}]
+t1 = [{""Nom"":""Le tampon"";""CP"":97418},{""Nom"":""La possession"";""CP"":97419}]
+```",`t = t1.join(t2)`,"`t = concat(t1, t2)`",`t == t1 + t2`,`t = t1 + t2`,D,Traitement de données en table,14,
