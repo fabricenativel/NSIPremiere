@@ -15,8 +15,20 @@
 3. Prévisualiser les données au format `csv`. Faites des recherches sur ce format de données.
 4. Expliquer rapidement comment sont représentées des données au format `csv`
 
+
+{{ titre_activite("De nouveaux outils en Python",["notebook"]) }}
+
+Pour traiter des données en tables représentées sous forme de fichiers `csv`, on utilise de nouvelles fonctionnalités de Python à découvrir dans les Notebook suivants :
+
+1. La manipulation de fichiers en Python :
+{{ telecharger("Sur les fichiers","./notebook/Fichiers.ipynb")}}
+
+1. Les dictionnaires en Python :
+{{ telecharger("Sur les dictionnaires","./notebook/Dictionnaires.ipynb")}}
+
 {{ titre_activite("Lecture et traitement",["notebook"]) }}
-{{ telecharger("Jupyter Notebook","./notebook/MenuCantine.ipynb")}}
+
+{{ telecharger("Données en table avec Python","./notebook/MenuCantine.ipynb")}}
 
 {{ titre_activite("Tri d'une table",[]) }}
 

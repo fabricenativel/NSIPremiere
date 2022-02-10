@@ -22,7 +22,7 @@
 De la même façon qu'en écriture décimale les chiffres situées à droite de la virgule correspondent aux puissances négatives de 10 :  
 ![Exemple écriture décimale](./images/C16/ecrituredecimale.png){: .centre}
 C'est à dire :
-$3,14 = 3 \times 10^{0} + 1 \times 10^{-1} + 4 \times 10^{2}$  
+$3,14 = 3 \times 10^{0} + 1 \times 10^{-1} + 4 \times 10^{-2}$  
 On peut écrire des nombres à virgule en binaire, avec les puissances négatives de 2 après la virgule. Par exemple :  
 $0,1101_{2} = 2^{-1} + 2^{-2} + 2^{-4}$  
 $0,1101_{2} = 0,5_{10} + 0,25_{10} + 0,0625_{10}$  
