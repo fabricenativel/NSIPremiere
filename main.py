@@ -44,7 +44,7 @@ def define_env(env):
         "rappel": ":fontawesome-solid-clock-rotate-left:{title='Retour sur des notions antérieures'}",
         "recherche": ":fontawesome-solid-search:{title='Activité de recherche'}",
         "oral": ":fontawesome-solid-comments:{title='Activité oral'}",
-        "papier": ":fontawesome-solid-edit:{title='Activité à réaliser sur feuille'}",
+        "papier": ":fontawesome-solid-pen-to-square:{title='Activité à réaliser sur feuille'}",
         "vscode": ":material-microsoft-visual-studio-code:{title='Activité utilisant VS Code'}",
         "video": ":fontawesome-solid-film:{title='Activité utilisant un support vidéo'}",
         "notebook": ":fontawesome-solid-book:{title='Activité utilisant un jupyter notebook'}",
