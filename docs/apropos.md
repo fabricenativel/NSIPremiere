@@ -1,8 +1,6 @@
 hide: - navigation  in apropos.md
 # A Propos
 
-La dernière mise à jour du site date du  {{ git_revision_date }}
-
 ## Contenu
 
 Vous trouverez sur ce site le contenu du cours de NSI en classe première du [lycée Mémona Hintermann-Afféjee](http://lycee-hintermann.ac-reunion.fr/){target=_blank}.
@@ -17,10 +15,7 @@ Chaque chapitre se compose :
 
 * A la [liste de discussion NSI](https://groupes.renater.fr/sympa/info/numerique-sciences-informatiques){target=_blank} qui a été une source d'inspiration constante dans l'écriture de ce cours (mention spécial au créateur de la liste et  aux contributeurs réguliers).
 * Au [forum des enseignants NSI](https://mooc-forums.inria.fr/moocnsi/){target=_blank}.
-* Aux collègues qui avant moi ont mis en ligne leurs propres cours et notamment :
-    * [Le site de David Roche](https://pixees.fr/informatiquelycee/){target=_blank}
-    * [Le github de Gilles Lassus](https://github.com/glassus/nsi){target=_blank}
-    * [Le site du Lycée la Martinière](){target=_blank}
+* Aux collègues qui avant moi ont mis en ligne leurs propres cours (voir la page des [liens](https://fabricenativel.github.io/NSIPremiere/liens/))
 * A [Sebastien Hoarau](https://sebhoa.gitlab.io/iremi/){target=_blank} pour les conseils et la relecture du contenu.
 
 ## Contact
