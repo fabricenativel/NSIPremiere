@@ -33,7 +33,7 @@ def define_env(env):
     }
     env.variables['icones_exo']={
         "dur": ":fontawesome-solid-bomb:{title='Exercice difficile'}",
-        "rappel": ":fontawesome-solid-history:{title='Retour sur des notions antérieures'}",
+        "rappel": ":fontawesome-solid-clock-rotate-left:{title='Retour sur des notions antérieures'}",
         "recherche": ":fontawesome-solid-search:{title='Exercice de recherche'}",
         "capacite": ":fontawesome-solid-puzzle-piece:{title='Exercice testant une capacité du chapitre'}",
         "python": ":fontawesome-brands-python:{title='Exercice en lien avec la programmation en Python'}",
@@ -41,7 +41,7 @@ def define_env(env):
         "maths": ":fontawesome-solid-infinity:{title='Exercice en lien avec les mathématiques'}"
     }
     env.variables['icones_act']={
-        "rappel": ":fontawesome-solid-history:{title='Retour sur des notions antérieures'}",
+        "rappel": ":fontawesome-solid-clock-rotate-left:{title='Retour sur des notions antérieures'}",
         "recherche": ":fontawesome-solid-search:{title='Activité de recherche'}",
         "oral": ":fontawesome-solid-comments:{title='Activité oral'}",
         "papier": ":fontawesome-solid-edit:{title='Activité à réaliser sur feuille'}",
