@@ -65,6 +65,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences:          # Imbrication de blocs.
     # Exception pour code highlight (de façon à faire fonctionner mermaid)
       custom_fences:
@@ -84,8 +87,6 @@ markdown_extensions:
   - attr_list
   # Permet l'utilisation d'abbréviation dans le fichier syntaxe *[abbr]: description (voir glossaire.md)
   - abbr
-  # Permet l'insertion de fichiers dans le document à l'aide de la syntaxe --8<-- "includes/glossaire.md"
-  - pymdownx.snippets
   # Admonitions et variantes (details : repliable, superfences : avec onglet)
   - admonition
   - pymdownx.details

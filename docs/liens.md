@@ -12,6 +12,7 @@ hide: - navigation  in apropos.md
 * [Pixees informatique lycée ](https://pixees.fr/informatiquelycee/){target=_blank}
 * [Cours de Vincent-Xavier Jumel](https://lamadone.frama.io/informatique/premiere-nsi/index.html){target=_blank}
 * [Cours du lycée du Parc à lyon](https://frederic-junier.gitlab.io/parc-nsi/){target=_blank}
+* [Qkzk](https://qkzk.xyz/docs/nsi/cours_premiere/){ttarget=_blank}
 * [Les cours en Vidéo Lumni](https://www.lumni.fr/lycee/premiere/specialites/numerique-et-sciences-informatiques){target=_blank}
 
 ## Concours et initiation ludiques à la programmation

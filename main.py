@@ -256,6 +256,15 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 nums+=1
         return aff
     
+    @env.macro
+    def code_insert(chap,nom,ntab=0):
+        stab = '\t'*ntab
+        modele = f'''
+{stab}```python3 linenums="1" \n
+{stab}--8<-- "python/C{chap}/{nom}"\n
+{stab}```'''
+        return modele
+    
     
 
     

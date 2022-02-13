@@ -207,3 +207,5 @@ alert(""Fin"")
 t1 = [{""Nom"":""Saint-Denis"";""CP"":97400},{""Nom"":""Saint-Paul"";""CP"":97411}]
 t1 = [{""Nom"":""Le tampon"";""CP"":97418},{""Nom"":""La possession"";""CP"":97419}]
 ```",`t = t1.join(t2)`,"`t = concat(t1, t2)`",`t == t1 + t2`,`t = t1 + t2`,D,Traitement de données en table,14,
+100,"Parmi les dispositifs d'entrée et de sortie suivants, lequel est uniquement un capteur ?",Le thermomètre,La diode,L'écran tactile,Le moteur pas à pas,A,Architectures matérielles et systèmes d'exploitation,15,
+101,"Parmi les dispositifs suivants, lequel est à la fois un capteur et un actionneur ?",Une diode,Une boussole,Un accéléromètre,Un écran tactile,D,Histoire de l'informatique,15,
