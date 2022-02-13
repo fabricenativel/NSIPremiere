@@ -28,7 +28,7 @@ def define_env(env):
         "donneestable":':fontawesome-solid-table:{title="'+env.variables['themes']['donneestable']+'"}',
         "web":':fontawesome-solid-code:{title="'+env.variables['themes']['web']+'"}',
         "os":':fontawesome-solid-microchip:{title="'+env.variables['themes']['os']+'"}',
-        "algorithmique":':fontawesome-solid-cogs:{title="'+env.variables['themes']['algorithmique']+'"}',
+        "algorithmique":':material-cogs:{title="'+env.variables['themes']['algorithmique']+'"}',
         "python":':fontawesome-brands-python:{title="'+env.variables['themes']['python']+'"}'
     }
     env.variables['icones_exo']={
