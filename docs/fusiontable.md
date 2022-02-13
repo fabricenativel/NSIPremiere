@@ -169,7 +169,7 @@ for pays in population:
 
 2. Le fichier téléchargé ci-dessus, n'indique pas les jours de la semaine auxquels tombent les jours fériés. Cette information est disponible dans le tableau ci-dessous :
 
-    {{ telecharger("Jours de la semaine","./files/C14/jours_semaines.csv")}}
+    {{ telecharger("Jours de la semaine","./files/C14/jours_semaine.csv")}}
 
 3. Ecrire un programme Python permettant de lire le contenu de ces deux fichiers sous la forme de deux listes de dictionnaires : `jours_feries` et `jours_semaine`.
 
