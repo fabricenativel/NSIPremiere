@@ -21,7 +21,7 @@ def define_env(env):
         "python":"Langages et programmation"
     }
     env.variables['icones'] = {
-        "histoire":':fontawesome-solid-university:{title="'+env.variables['themes']['histoire']+'"}',
+        "histoire":':fontawesome-solid-building-columns:{title="'+env.variables['themes']['histoire']+'"}',
         "projet":':fontawesome-solid-lightbulb:{title="'+env.variables['themes']['projet']+'"}',
         "typesbase":':fontawesome-solid-cube:{title="'+env.variables['themes']['typesbase']+'"}',
         "typesconstruits":':fontawesome-solid-cubes:{title="'+env.variables['themes']['typesconstruits']+'"}',
