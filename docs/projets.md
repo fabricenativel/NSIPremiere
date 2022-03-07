@@ -114,6 +114,56 @@ On pourra aussi regarder la vidéo suivante sur l'histoire de l'invention des co
 Projet libre au choix de l'élève mais soumis à la validation préalable de l'enseignant.
 
 #### Critères de réussite
-Les critères de réussites seront établis avec l'élève en fonction du projet choisi.
+Les critères de réussites seront établis avec les élèves en fonction du projet choisi.
 
 --8<-- "includes/glossaire.md"
+
+
+## Projet de la seconde période
+
+
+### Projet 1 : Plus loin avec le traitement de données en tables
+
+#### Descriptif
+Le but du projet est de reprendre  [cet exerice relatif au traitement de données](https://fabricenativel.github.io/NSIPremiere/donneestable/#exercice-4-statistiques-des-prenoms-donnes-en-france) pour en poursuivre l'exploitation des données qui s'y trouve et produire des graphiques.
+
+#### Critères de réussite
+
+* **[4 pts]** Télécharger le fichier de données, écrire un programme Python permettant de le lire sous forme d'une liste de dictionnaires. Expliciter les descripteurs du fichier.
+* **[4 pts]** Proposer une interface textuelle (à l'aide d'`input` et de `print`) permettant d'interroger la base de données sur l'évolution du nombre de fois où un prénom à été donné.
+* **[4 pts]** Faire des [recherches sur le module `pyplot`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html){target=_blank} qui permet de tracer des graphiques. On pourra commencer par suivre ce [tutoriel](https://matplotlib.org/stable/tutorials/introductory/pyplot.html){target=_blank} et faire les premiers exemples qui s'y trouvent.
+* **[4 pts]** A l'aide de ce module, proposer une sortie sous forme graphique de l'évolution de la popularité d'un prénom à la façon du site [prenomstat.com](http://www.prenomstat.com/){target=_blank}
+* **[4 pts]** Ajouter la possibilité d'afficher plusieurs prénoms sur un même graphique, ou de différencier par sexe, de classer par département, ...
+
+
+### Projet 2 : Plus loin avec le *Web*
+
+#### Descriptif
+Le but du projet est de reprendre  [le mini site web](https://fabricenativel.github.io/NSIPremiere/leweb/#exercice-4-creer-un-mini-site){target=_blank} de l'améliorer et d'y introduire un aspect interactif avec le javascript.
+
+#### Critères de réussite
+
+* **[4 pts]** Etoffer le contenu de votre site qui devra présenter un menu pour lequel on pourra par exemple utiliser [la balise `<nav>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav){target=_blank}.
+* **[4 pts]** Uniformiser l'aspect du site, en utilisant de façon obligatoire un fichier *css* externe.
+* **[4 pts]** Revoir le [chapitre sur les interactions dans une page web](https://fabricenativel.github.io/NSIPremiere/interactionweb/){target=_blank}. Et notamment les exercices d'application qui s'y trouvent.
+* **[8 pts]** En vous inspirant éventuellement d'exemples vus sur le web, ajouté un aspect interactif à votre page, sous la forme d'une ou plusieurs applications écrites en javascript.
+
+### Projet 3 : Plus loin avec la carte micro:bit
+
+#### Descriptif
+Le but du projet est de programmer des applications pour la carte micro:bit. 
+
+#### Critères de réussite
+
+* **[6 pts]** Programmer [le jeu de mémoire du chapitre 15](https://fabricenativel.github.io/NSIPremiere/interface/#exercice-4-quelques-idees-de-mini-projets) 
+* **[6 pts]** Améliorer le jeu précédent, par exemple en proposant au joueur de décider du nombre d'images total, du nombre d'images tirés au sort, du nombre de questions etc ... On peut aussi afficher les résultats sous la forme du pourcentage de bonnes réponses.
+* **[8 pts]** Proposer et programmer une idée d'application pour la carte, et prévoir un cahier des charges pour l'interface. On pourra s'inspirer des [exemples](https://fabricenativel.github.io/NSIPremiere/interface/#exercice-4-quelques-idees-de-mini-projets) du chapitre.
+
+
+### Projet 4 :  Projet libre
+
+#### Descriptif 
+Projet libre au choix de l'élève mais soumis à la validation préalable de l'enseignant.
+
+#### Critères de réussite
+Les critères de réussites seront établis avec les élèves en fonction du projet choisi.

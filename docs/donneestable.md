@@ -147,7 +147,7 @@ On précise la signification des champs suivants : <br>
 
 
 {{ exo("Statistiques des prénoms donnés en France",[]) }}
-Le but de l'exercice est de réutiliser un fichier de données du site [data.gouv.fr](https://data.gouv.fr)} pour en extraire des informations. Il s'agit des prénoms donnés en France entre 1900 et 2019.
+Le but de l'exercice est de réutiliser un fichier de données du site [data.gouv.fr](https://data.gouv.fr) pour en extraire des informations. Il s'agit des prénoms donnés en France entre 1900 et 2019.
 
 1. Télécharger le fichier à partir de l'adresse suivante : [fichier des prénoms](https://www.data.gouv.fr/fr/datasets/ficher-des-prenoms-de-1900-a-2019/){target=_blank}
 2. Ce fichier peut-il être ouvert avec un tableur ? Pourquoi ?
