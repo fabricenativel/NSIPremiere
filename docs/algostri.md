@@ -35,25 +35,26 @@
 
 {{ titre_activite("Tri par insertion",[]) }}
 
-1. Le programme Python à télécharger ci-dessous vous permet de visualiser le rangement de 6 nombres compris entre 0 et 20 (tirés au hasard à chaque exécution) en utilisant l'algorithme du *tri par insertion*
-{{telecharger("Tri par insertion","./files/C9/insertion.py")}}
-Exécuter ce programme en visualisant attentivement le fonctionnement de l'algorithme (capture d'écran ci-dessous). Vous pouvez à tout instant mettre en pause le programme en cliquant dans la fenêtre.
-![Visualisation tri par insertion](./images/C9/tri_insertion.png){: .imgcentre}
-2. Expliquer en quelques phrases le fonctionnement de cet algorithme, en particulier :
-    * Que dire de la partie de la liste située avant le trait en pointillés ?
-    * Que signifie le clignotement de deux cartes situées côte à côte ?
-    * Comment procède-t-on pour insérer un élément à sa position dans la liste située avant le trait en pointillés ?
-3. Faire fonctionner cet algorithme "à la main" sur la liste `[11,17,4,10,13,5]` en indiquant à chaque étape le contenu de la liste
-4. Recopier et compléter l'implémentation en Python de cet algorithme (où on utilise la fonction `echange` définie dans l'activité précédente).
-```python
-def tri_insertion(liste):
-    for index in range(...):
-        k =  index - 1
-        # Echanger l'élément avec celui qui le précède dans qu'il lui est supérieur (et que le début de liste n'est pas atteint)
-        while liste[...]>liste[...] and k>=...:
-            echange(liste,...,...)
-            k = k -1
-```
+1. De même que dans l'activité précédente, commencer par télécharger une application Python :
+
+    * {{telecharger("Tri par insertion","./files/C9/activite2.zip")}}
+    * Copier ce fichier dans le répertoire de votre choix
+    * Faire un clic droit sur le fichier compressé et choisir *Extraire ici*
+    * Lancer le programme Python `activite2.py`, en tapant `python activite1.py` dans un terminal ou depuis Vs Code (en ayant ouvert le dossier contenant le fichier activite2.py)
+
+2. De même que dans l'activité précédente, il faut ranger les cartes dans l'ordre *sans les voir*, on dispose d'un unique bouton permettant d'échanger une carte dont on donne le numéro avec sa voisine *si elles ne sont pas dans le bon ordre*
+
+3. Proposer un algorithme permettant de ranger une liste par ordre croissant en utilisant comme seul *"ingrédient"* l'échange de deux cartes dont on donne les emplacements.
+
+    !!! aide
+        Bien évidemment, des boucles et des tests seront aussi nécessaires
+
+
+4. Proposer une implémentation en Python de cet algorithme 
+
+    !!! aide
+        On pourra utiliser la fonction `echange` définie dans l'activité précédente.
+
 5. Tester cette fonction
 
 ## Cours

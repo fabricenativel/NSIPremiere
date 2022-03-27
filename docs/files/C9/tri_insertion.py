@@ -1,16 +1,16 @@
 from random import randint
 
 
-def insere(liste,elt,indice):
-    while indice>0 and liste[indice]<liste[indice-1]:
-        liste[indice],liste[indice-1] = liste[indice-1],liste[indice]
-        indice -= 1
+def echange(liste,i,j):
+    liste[i],liste[j] = liste[j],liste[i]
 
 # Tri par insertion
 def tri_insertion(liste):
-    for ind in range(len(liste)):
-        # insere permet d'insérer au bon emplacement entre les indices 0 et ind
-        insere(liste,liste[ind],ind)
+    for ind in range(1,len(liste)-1):
+        j = ind
+        while liste[j+1]<liste[j] and j>=0:
+            echange(liste,j,j+1)
+            j=j-1
 
 
 ex_liste = [randint(1,100) for _ in range(50)]

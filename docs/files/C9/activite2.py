@@ -42,7 +42,7 @@ class Jeu:
         self.bouton_check = tkinter.Button(self.fen, text ="Vérifier", command = self.check,bg=BG_BUTTON,fg=FLECHE_COLOR,borderwidth=0)
         self.bouton_quit = tkinter.Button(self.fen, text ="Quitter", command = self.quit,bg=BG_BUTTON,fg=FLECHE_COLOR,borderwidth=0)
         self.bouton_init = tkinter.Button(self.fen, text ="Recommencer", command = self.restart,bg=BG_BUTTON,fg=FLECHE_COLOR,borderwidth=0)
-        self.choix_getmax = tkinter.OptionMenu(self.fen, self.mfrom, *NUM)
+        self.choix_getmax = tkinter.OptionMenu(self.fen, self.mfrom, *NUM[:-1])
         self.choix_getmax.config(bg=BG_BUTTON,fg=FG_BUTTON,borderwidth=0)
         self.images=[tkinter.PhotoImage(master=self.fen,file="./img/C"+str(i)+'.png') for i in range(0,9)]
         self.cnums = [tkinter.Label(self.fen,text=str(i),fg=LABEL_COLOR,bg=BG_COLOR,font=("Arial",18,"bold")) for i in range(0,8)]
