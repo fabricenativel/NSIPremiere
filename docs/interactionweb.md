@@ -15,6 +15,7 @@
     ```
     Quel est l'objectif de cette ligne ?
     2. Remplacer le nom de la feuille de style par `qcm.css` et créer le fichier correspondant.
+
 2. Dans le fichier `qcm.html`, ajouter les élément suivants :
     1. un titre (balise `<h1> ... </h1>`)
     2. un paragraphe de présentation du {{sc("qcm")}} (balise `<p> ... </p>`)
@@ -33,15 +34,17 @@
         !!! aide
             Faites vos propres recherches sur le *Web*, sur les balises de formulaires en HTML.
     
-    4. un bouton de validation du formulaire (balise <input type="submit">)
+    4. un bouton de validation du formulaire (balise `<input type="submit">`)
     5. une zone ou apparaîtra le résultat de la validation des réponses (balise `<div> .... </div>`)
+
 3. Création du {{sc("css")}}
+
     1. Quel est le rôle de `class="titre"` dans la balise `<span>` entourant la question ?
     2. Ouvrir le fichier `qcm.css` crée plus haut et y créer un style `titre` permettant d'avoir les titres de questions dans la couleur et le format de votre choix.
     3. Faire de même pour les autres éléments de la page (titre, description, bouton de formulaire, ...)
 
 4. Vers l'interaction  
-Notre page web est terminée, mais pour le moment cliquer sur le bouton de validation du formulaire ne produit aucun résultat. Les données récupérées dans un formulaire peuvent être traitées du côté du serveur (on parle alors en anglais de *server-side scripting*). Dans ce cas l'un des langages les plus populaires est php. Mais les données d'un formulaire peuvent aussi être traitées sur la machine du client (*client-side scripting*) et le langage alors utilisé est **Javascript**.
+Notre page web est terminée, mais pour le moment cliquer sur le bouton de validation du formulaire ne produit aucun résultat. Les données récupérées dans un formulaire peuvent être traitées du côté du serveur (on parle alors en anglais de *server-side scripting*). Dans ce cas l'un des langages les plus populaires est [php](http://www.php.net){target=_blank}. Mais les données d'un formulaire peuvent aussi être traitées sur la machine du client (*client-side scripting*) et le langage alors utilisé est **Javascript**.
 
     1. Quels sont les dangers potentiels lorsqu'une page Web exécute un programme sur votre ordinateur ?
     2. Peut-on configurer son navigateur pour empêcher l'exécution de script ?
