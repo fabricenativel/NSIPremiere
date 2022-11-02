@@ -69,12 +69,6 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.superfences:          # Imbrication de blocs.
-    # Exception pour code highlight (de façon à faire fonctionner mermaid)
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
-
   - pymdownx.tabbed:               # Volets glissants.  === "Mon volet"
       alternate_style: true 
   - pymdownx.arithmatex:
@@ -97,7 +91,6 @@ markdown_extensions:
 plugins:
   - macros
   - search
-  - mermaid2
 
 
 extra_css:
