@@ -1,0 +1,98 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{ActCor}
+
+\begin{document}
+\input{\detokenize{/home/fenarius/Travail/Cours/Commun/latex/Macros.tex}}
+
+\DevoirNSI{Algorithme de tri}{\Pre}\vspace{0.2cm}
+\pythonmode
+%Nom de la première activité
+
+\Exo{Algorithmes de tri}{}
+\QListe
+\item Tri par sélection
+\SQListe
+\item Expliquer en quelques phrases le principe de l'algorithme du tri par sélection
+\tcor{Voirs cours}{1}
+\item On applique l'algorithme du tri par sélection à la liste  {\tt [11,17,14,42,5,30,19]}. Donner l'évolution du contenu de la liste au cours des étapes du tri.
+\tcor{\tt
+    [11,17,14,42,5,30,19]\newline
+    [5,17,14,42,11,30,19]\newline
+    [5,11,14,42,17,30,19]\newline
+    [5,11,14,17,42,30,19]\newline
+    [5,11,14,17,19,30,42]
+}{2}
+\FinListe
+\item Tri par insertion
+\SQListe
+\item Expliquer en quelques phrases le principe de l'algorithme du tri par insertion
+\tcor{Voir cours}{1}
+\item On applique l'algorithme du tri par insertion à la liste  {\tt [11,17,14,42,5,30,19]}. Donner l'évolution du contenu de la liste au cours des étapes du tri.\\
+\tcor{\tt
+[11,17,14,42,5,30,19]\newline
+[11,14,17,42,5,30,19]\newline
+[11,14,17,42,5,30,19]\newline
+[5,11,14,17,42,30,19]\newline
+[5,11,14,17,30,42,19]\newline
+[5,11,14,17,19,30,42]\newline
+}{2}
+\aide \; On pourra donner l'état de la liste après chaque insertion, sans écrire les étapes intermédiaires de ces insertions.
+\FinListe
+\FinListe
+
+\vspace{0.2cm}
+\Exo{Programmation en python}{}\\
+On veut écrire une fonction {\tt trouve\_mini} qui renvoie l'indice de la première occurrence du plus petit élément d'une liste. Par exemple, {\tt trouve\_mini([13,9,10,7,18])} doit renvoyer 3.
+\QListe
+\item Que doit renvoyer {\tt trouve\_mini([15,10,17,11,22])} ?
+\tcor{{\tt trouve\_mini([15,10,17,11,22])} doit renvoyer {\tt 1} car le plus petit élément (10) se trouve à l'indice~1}{0.5}
+\item Que doit renvoyer {\tt trouve\_mini([5,22,5,41,20,5,17])} ? \\
+\item \tcor{{\tt trouve\_mini([5,22,5,41,20,5,17])} doit renvoyer {\tt 0} car le plus petit élément (5) apparaît pour la première fois à l'indice~0}{0.5}
+\aide \; On rappelle que lorsque le minimum apparaît plusieurs fois, on doit renvoyer la première occurence.
+\item Compléter le code de la fonction {\tt trouve\_mini} ci-dessous.
+\pagebreak
+\textcolor{red}{\textbf 4 points}
+\begin{lstlisting}
+def indice_minimum(liste):
+indice_minimum = 0
+for indice in range(len(liste)):
+    if liste[indice]<liste[indice_minimum]:
+        indice_minimum = indice
+return indice_minimum
+\end{lstlisting}
+\item Que renverra {\tt trouve\_mini([])} ?
+\tcor{La boucle n'est jamais parcourue si la liste est vide donc la valeur d'initialisation 0 est renvoyée.}{1}
+\item Modifier cette fonction afin que {\tt trouve\_mini([])} renvoie $-1$.
+\textcolor{red}{\textbf 1 points}
+\begin{lstlisting}
+def indice_minimum(liste):
+if liste==[]:
+    return -1
+indice_minimum = 0
+for indice in range(len(liste)):
+    if liste[indice]<liste[indice_minimum]:
+        indice_minimum = indice
+return indice_minimum
+\end{lstlisting}
+\FinListe
+
+\vspace{0.2cm}
+
+\Exo{Coût}{}
+\QListe
+\item Expliquer rapidement ce que signifie une complexité linéaire pour un algorithme.
+\tcor{Cela signifie que lorsque la taille des données est multiplié par un facteur $k$ alors le coût de l'algorithme est multiplié lui aussi par un facteur $k$}{1}
+\item Donner au moins un exemple, d'algorithme ayant une complexité linéaire.
+\tcor{L'algorithme de recherche simple d'un élement dans une liste. On peut aussi citer : recherche du maximum, calcul de la somme, ...}{1}
+\item Un algorithme de complexité linéaire traite une liste de $25\,000$ éléments en $0,03s$. Quel est le temps approximatif d'exécution prévisible pour une liste de $150\,000$ éléments ?
+\tcor{La taille de la liste a été multiplié par 6, le temps sera donc lui aussi multiplié approximativement par 6, l'exécution devrait donc prendre environ $0,03 \times 6 = 0,18 s$}{2} 
+\item On rappelle que: \og l'algorithme du tri par sélection à une \textit{complexité quadratique} \fg, expliquer en quelques lignes ce que signifie cette phrase.
+\tcor{Cela signifie que lors la taille des données est multipliée par un facteur $k$ alors le coût de l'algorithme est multiplié par un facteur $k^2$.}{1}
+\item On a écrit un programme permettant de trier une liste à l'aide du tri par sélection. Si ce programme traite une liste de $5\,000$ élément en 0,75 secondes, quel est le temps approximatif d'exécution prévisible pour une liste de $80\,000$ éléments ?
+\tcor{La taille de la liste a été multiplié par 16, le temps sera donc  multiplié approximativement par $16^2=256$, l'exécution devrait donc prendre environ $0,75 \times 256 = 192 s$}{2} 
+
+\FinListe
+
+\end{document}
+

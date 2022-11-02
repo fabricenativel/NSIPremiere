@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{ActCor}
+\usepackage{listings}
+
+\begin{document}
+\input{\detokenize{/home/fenarius/Travail/Cours/Commun/latex/Macros.tex}}
+
+\DevoirNSI{Algorithme de tri}{\Pre}\vspace{0.2cm}
+\pythonmode
+%Nom de la première activité
+
+\Exo{Algorithmes de tri}{}
+\QListe
+\item Tri par sélection
+\SQListe
+\item Expliquer en quelques phrases le principe de l'algorithme du tri par sélection
+\item On applique l'algorithme du tri par sélection à la liste  {\tt [11,17,14,42,5,30,19]}. Donner l'évolution du contenu de la liste au cours des étapes du tri.
+\FinListe
+\item Tri par insertion
+\SQListe
+\item Expliquer en quelques phrases le principe de l'algorithme du tri par insertion
+\item On applique l'algorithme du tri par insertion à la liste  {\tt [11,17,14,42,5,30,19]}. Donner l'évolution du contenu de la liste au cours des étapes du tri.\\
+\aide \; On pourra donner l'état de la liste après chaque insertion, sans écrire les étapes intermédiaires de ces insertions.
+\FinListe
+\FinListe
+
+\vspace{0.2cm}
+\Exo{Programmation en python}{}\\
+On veut écrire une fonction {\tt trouve\_mini} qui renvoie l'indice de la première occurrence du plus petit élément d'une liste. Par exemple, {\tt trouve\_mini([13,9,10,7,18])} doit renvoyer 3.
+\QListe
+\item Que doit renvoyer {\tt trouve\_mini([15,10,17,11,22])} ?
+\item Que doit renvoyer {\tt trouve\_mini([5,22,5,41,20,5,17])} ? \\
+\aide \; On rappelle que lorsque le minimum apparaît plusieurs fois, on doit renvoyer la première occurence.
+\item Compléter le code de la fonction {\tt trouve\_mini} ci-dessous.
+\begin{lstlisting}
+... trouve_mini(liste):
+indice_mini = 0
+for indice in range(.......):
+    if .......<........:
+        indice_mini = indice
+...... indice_mini
+\end{lstlisting}
+\item Que renverra {\tt trouve\_mini([])} ?
+\item Modifier cette fonction afin que {\tt trouve\_mini([])} renvoie $-1$.
+\FinListe
+
+\vspace{0.2cm}
+
+\Exo{Coût}{}
+\QListe
+\item Expliquer rapidement ce que signifie une complexité linéaire pour un algorithme.
+\item Donner au moins un exemple, d'algorithme ayant une compléxité linéaire.
+\item Un algorithme de complexité linéaire traite une liste de $25\,000$ éléments en $0,03s$. Quel est le temps approximatif d'exécution prévisible pour une liste de $150\,000$ éléments ?
+\item On rappelle que: \og l'algorithme du tri par sélection à une \textit{complexité quadratique} \fg, expliquer en quelques lignes ce que signifie cette phrase.
+\item On a écrit un programme permettant de trier une liste à l'aide du tri par sélection. Si ce programme traite une liste de $5\,000$ élément en 0,75 secondes, quel est le temps approximatif d'exécution prévisible pour une liste de $80\,000$ éléments ?
+\FinListe
+
+\end{document}
+

@@ -1,0 +1,16 @@
+\mframe{\JS}
+\begin{exampleblock}{Exemple de code Javascript}
+\begin{center}
+\begin{lstlisting}
+<script>
+        var nombre=7;
+        table=("<div>");
+        for (i=1;i<10;i++)
+        {mult = i+"x"+nombre+"="+nombre*i+'<br>';
+        table=table+mult;}
+        table=table+"</div>";
+        document.write(table);
+</script>
+\end{lstlisting}
+\end{center}
+\end{exampleblock}
